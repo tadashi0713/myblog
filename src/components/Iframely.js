@@ -1,9 +1,8 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Helmet from 'react-helmet';
 
 export default class Iframely extends React.Component {
-
-  componentDidMount () {
+  componentDidMount() {
     if (window.iframely) {
       window.iframely.load();
     }
