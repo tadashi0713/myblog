@@ -1,16 +1,16 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  url: 'https://tadashi0713.com/',
+  title: 'Blog by Tadashi Nemoto',
+  subtitle: 'Automation Engineer',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-73379983-2',
   menu: [
     {
-      label: 'Articles',
+      label: 'Blogs',
       path: '/'
     },
     {
@@ -18,14 +18,18 @@ module.exports = {
       path: '/pages/about'
     },
     {
-      label: 'Contact me',
+      label: 'External Articles',
+      path: '/pages/contacts'
+    },
+    {
+      label: 'Slides',
       path: '/pages/contacts'
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Tadashi Nemoto',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Automation Engineer',
     contacts: {
       email: '#',
       telegram: '#',
