@@ -19,11 +19,11 @@ module.exports = {
     },
     {
       label: 'External Articles',
-      path: '/pages/contacts'
+      path: '/pages/external_articles'
     },
     {
       label: 'Slides',
-      path: '/pages/contacts'
+      path: '/pages/slides'
     }
   ],
   author: {
@@ -31,12 +31,8 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'Automation Engineer',
     contacts: {
-      email: '#',
-      telegram: '#',
       twitter: '#',
-      github: '#',
-      rss: '#',
-      vkontakte: '#'
+      github: 'tadashi0713',
     }
   }
 };
