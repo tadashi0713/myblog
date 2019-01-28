@@ -2,7 +2,7 @@
 template: page
 title: External Articles / 公開した記事
 slug: /pages/external_articles/
-draft: true
+draft: false
 ---
 ## 2018
 
