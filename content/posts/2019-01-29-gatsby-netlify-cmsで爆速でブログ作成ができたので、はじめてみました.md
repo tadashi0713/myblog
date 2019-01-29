@@ -2,7 +2,7 @@
 template: post
 title: Gatsby + Netlify CMSで爆速でブログ作成ができたので、はじめてみました
 slug: a
-draft: true
+draft: false
 date: 2019-01-28T16:45:04.897Z
 description: a
 category: Blog
