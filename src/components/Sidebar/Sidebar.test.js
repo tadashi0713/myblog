@@ -21,7 +21,6 @@ describe('Sidebar', () => {
                 telegram: '#'
               }
             },
-            copyright: 'copyright',
             menu: [
               {
                 label: 'Item 0',
