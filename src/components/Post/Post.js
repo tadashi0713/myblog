@@ -6,6 +6,7 @@ import Content from './Content';
 import Meta from './Meta';
 import Tags from './Tags';
 import styles from './Post.module.scss';
+import Iframely from '../Iframely';
 
 const Post = ({ post }) => {
   const {
@@ -19,6 +20,7 @@ const Post = ({ post }) => {
 
   return (
     <div className={styles['post']}>
+      <Iframely/>
       <Link className={styles['post__home-button']} to="/">All Articles</Link>
 
       <div className={styles['post__content']}>
