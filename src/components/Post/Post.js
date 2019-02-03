@@ -32,7 +32,7 @@ const Post = ({ post }) => {
       </div>
 
       <div className={styles['post__footer']}>
-        <SNSShare postUrl={postUrl}/>
+        <SNSShare postUrl={postUrl} postTitle={title}/>
         <Meta date={date} />
         <Tags tags={tags} tagSlugs={tagSlugs} />
         <Author />
