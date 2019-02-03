@@ -3,18 +3,9 @@
 const siteConfig = require('./config.js');
 const postCssPlugins = require('./postcss-config.js');
 
-const {
-  NODE_ENV,
-  URL: NETLIFY_SITE_URL = siteConfig.url,
-  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
-  CONTEXT: NETLIFY_ENV = NODE_ENV
-} = process.env;
-const isNetlifyProduction = NETLIFY_ENV === 'production';
-const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
-
 module.exports = {
   siteMetadata: {
-    url: siteUrl,
+    url: siteConfig.url,
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
     disqusShortname: siteConfig.disqusShortname,
@@ -179,27 +170,6 @@ module.exports = {
         postCssPlugins: [...postCssPlugins],
         cssLoaderOptions: {
           camelCase: false,
-        }
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        resolveEnv: () => NETLIFY_ENV,
-        env: {
-          production: {
-            policy: [{ userAgent: '*' }]
-          },
-          'branch-deploy': {
-            policy: [{ userAgent: '*', disallow: ['/'] }],
-            sitemap: null,
-            host: null
-          },
-          'deploy-preview': {
-            policy: [{ userAgent: '*', disallow: ['/'] }],
-            sitemap: null,
-            host: null
-          }
         }
       }
     }
