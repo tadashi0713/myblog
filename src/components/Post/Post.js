@@ -7,6 +7,7 @@ import Meta from './Meta';
 import Tags from './Tags';
 import styles from './Post.module.scss';
 import Iframely from '../Iframely';
+import { FacebookShareButton, FacebookIcon } from 'react-share';
 
 const Post = ({ post }) => {
   const {
@@ -28,6 +29,9 @@ const Post = ({ post }) => {
       </div>
 
       <div className={styles['post__footer']}>
+        <FacebookShareButton url="https://tadashi0713.com/">
+          <FacebookIcon size={32} round />
+        </FacebookShareButton>
         <Meta date={date} />
         <Tags tags={tags} tagSlugs={tagSlugs} />
         <Author />
