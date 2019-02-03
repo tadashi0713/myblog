@@ -12,7 +12,7 @@ describe('Author', () => {
               name: 'test',
               bio: 'test',
               contacts: {
-                twitter: 'test'
+                facebook: 'test'
               }
             }
           }

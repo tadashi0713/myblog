@@ -26,7 +26,7 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'Automation Engineer',
     contacts: {
-      twitter: '#',
+      facebook: 'nemoto.tadashi',
       github: 'tadashi0713',
     }
   }
