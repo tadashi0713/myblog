@@ -5,9 +5,9 @@ import Comments from './Comments';
 import Content from './Content';
 import Meta from './Meta';
 import Tags from './Tags';
+import SNSShare from './SNSShare';
 import styles from './Post.module.scss';
 import Iframely from '../Iframely';
-import { FacebookShareButton, FacebookIcon } from 'react-share';
 
 const siteConfig = require('../../../config.js');
 const postUrl = siteConfig.url;
@@ -32,9 +32,7 @@ const Post = ({ post }) => {
       </div>
 
       <div className={styles['post__footer']}>
-        <FacebookShareButton url={postUrl}>
-          <FacebookIcon size={32} round />
-        </FacebookShareButton>
+        <SNSShare postUrl={postUrl}/>
         <Meta date={date} />
         <Tags tags={tags} tagSlugs={tagSlugs} />
         <Author />
