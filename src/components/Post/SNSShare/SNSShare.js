@@ -10,6 +10,8 @@ import {
   LineShareButton,
   LineIcon
 } from 'react-share';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGetPocket } from '@fortawesome/free-brands-svg-icons';
 
 const SNSShare = ({ postUrl, postTitle }) => (
   <div>
@@ -29,6 +31,16 @@ const SNSShare = ({ postUrl, postTitle }) => (
     <LineShareButton title={postTitle} url={postUrl}>
       <LineIcon size={32} round />
     </LineShareButton>
+    <a
+      aria-label="share_pocket"
+      // className={styles.pocket_icon_link}
+      href={`https://getpocket.com/edit?url=${postUrl}&title=${postTitle}`}
+      onClick={`window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;`}>
+      <FontAwesomeIcon
+        color="#fff"
+        // className={styles.pocket_icon}
+        icon={faGetPocket} />
+    </a>
     <a
       aria-label="share_hatena-bookmark"
       href="http://b.hatena.ne.jp/entry/"
