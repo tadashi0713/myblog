@@ -44,13 +44,13 @@ const SNSShare = ({ postUrl, postTitle }) => (
         className="hatena-bookmark-button"
         data-hatena-bookmark-layout="touch-counter"
         title="このエントリーをはてなブックマークに追加"
-        style={{boxShadow: 'none' }}>
+        style={{ boxShadow: 'none' }}>
         <img
           src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
           alt="このエントリーをはてなブックマークに追加"
           width="24"
           height="24"
-          style={{border: 'none'}} />
+          style={{ border: 'none' }} />
       </a>
     </li>
   </ul>
