@@ -9,6 +9,9 @@ import styles from './Post.module.scss';
 import Iframely from '../Iframely';
 import { FacebookShareButton, FacebookIcon } from 'react-share';
 
+const siteConfig = require('../../../config.js');
+const postUrl = siteConfig.url;
+
 const Post = ({ post }) => {
   const {
     tags,
@@ -29,7 +32,7 @@ const Post = ({ post }) => {
       </div>
 
       <div className={styles['post__footer']}>
-        <FacebookShareButton url="https://tadashi0713.com/">
+        <FacebookShareButton url={postUrl}>
           <FacebookIcon size={32} round />
         </FacebookShareButton>
         <Meta date={date} />
