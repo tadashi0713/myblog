@@ -62,7 +62,14 @@ jobs:
             - coverage-output-{{ .Environment.CIRCLE_SHA1 }}
       - run: yarn global add codecov
       - run: yarn codecov
-    
+
+  build_prod:
+    - checkout
+    - restore_cache:
+        keys:
+          - dependencies-{{ checksum "yarn.lock" }}
+    - run: yarn build
+
 workflows:
   version: 2
   test:
@@ -80,3 +87,6 @@ workflows:
       - codecov:
           requires:
             - coverage
+      - build_prod:
+          requires:
+            - install
