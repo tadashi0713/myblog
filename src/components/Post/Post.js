@@ -5,8 +5,11 @@ import Comments from './Comments';
 import Content from './Content';
 import Meta from './Meta';
 import Tags from './Tags';
+import SNSShare from './SNSShare';
 import styles from './Post.module.scss';
 import Iframely from '../Iframely';
+
+const siteConfig = require('../../../config.js');
 
 const Post = ({ post }) => {
   const {
@@ -16,7 +19,9 @@ const Post = ({ post }) => {
   } = post.frontmatter;
 
   const { html } = post;
-  const { tagSlugs } = post.fields;
+  const { slug, tagSlugs } = post.fields;
+
+  const postUrl = `${siteConfig.url}${slug}`;
 
   return (
     <div className={styles['post']}>
@@ -28,6 +33,7 @@ const Post = ({ post }) => {
       </div>
 
       <div className={styles['post__footer']}>
+        <SNSShare postUrl={postUrl} postTitle={title}/>
         <Meta date={date} />
         <Tags tags={tags} tagSlugs={tagSlugs} />
         <Author />
