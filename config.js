@@ -6,7 +6,7 @@ module.exports = {
   subtitle: 'Automation Engineer',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'UA-133659588-1',
   menu: [
     {
       label: 'Blogs',
