@@ -16,7 +16,6 @@ const SNSShare = ({ postUrl, postTitle }) => (
   <ul className={styles.content}>
     <Helmet>
       <script type="text/javascript" src="//b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async" />
-      <script type="text/javascript" src="//widgets.getpocket.com/v1/j/btn.js?v=1"  charset="utf-8" async="async" />
     </Helmet>
     <li className={styles.share_button}>
       <FacebookShareButton url={postUrl}>
