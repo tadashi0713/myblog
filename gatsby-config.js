@@ -174,11 +174,11 @@ module.exports = {
       }
     },
     {
-      resolve: ` gatsby-plugin-netlify-headers`,
+      resolve: 'gatsby-plugin-netlify-headers',
       options: {
         headers: {
-          "/*": [
-            "X-Frame-Options: allow-from https://tadashi0713.com",
+          '/*': [
+            'X-Frame-Options: allow-from https://tadashi0713.com',
           ],
         },
       }
