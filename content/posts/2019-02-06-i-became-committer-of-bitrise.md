@@ -26,7 +26,7 @@ Bitrise is mobile Continuous Integration / Continuous Delivery service, which is
 
 They are now trying to spread this service in Japan because Japan is now 3rd biggest market.
 
-<script async class="speakerdeck-embed" data-id="4886038189764818b0713fac4ecb7543" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<iframe id="talk_frame_474912" src="//speakerdeck.com/player/4886038189764818b0713fac4ecb7543" width="710" height="399" style="border:0; padding:0; margin-bottom:30px; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 I have some experience of setting and maintaining Android workflows of Bitrise, therefore I contributed translation of document from English to Japanese.
 
