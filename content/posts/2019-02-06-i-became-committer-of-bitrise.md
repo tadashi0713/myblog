@@ -26,8 +26,6 @@ Bitrise is mobile Continuous Integration / Continuous Delivery service, which is
 
 They are now trying to spread this service in Japan because Japan is now 3rd biggest market.
 
-<iframe id="talk_frame_474912" src="//speakerdeck.com/player/4886038189764818b0713fac4ecb7543" width="710" height="399" style="border:0; padding:0; margin-bottom:30px; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
 I have some experience of setting and maintaining Android workflows of Bitrise, therefore I contributed translation of document from English to Japanese.
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 168px; padding-bottom: 0;"><a href="https://github.com/bitrise-io/devcenter/pull/417" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2Fbitrise-io%2Fdevcenter%2Fpull%2F417&amp;key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
@@ -35,4 +33,3 @@ I have some experience of setting and maintaining Android workflows of Bitrise, 
 I`ll continue to contribute document translation as studying English.
 
 In addition, I`ll challenge another contribution such as Steps.
-
