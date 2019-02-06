@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://tadashi0713.com/',
   title: 'Blog by Tadashi Nemoto',
   subtitle: 'Automation Engineer',
-  disqusShortname: '',
+  disqusShortname: 'https-tadashi0713-com',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-133659588-1',
   menu: [
