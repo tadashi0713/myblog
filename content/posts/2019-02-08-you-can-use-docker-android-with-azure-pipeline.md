@@ -15,7 +15,7 @@ tags:
 ---
 Last year, I wrote blog about Android・Appium test environment using [Docker-Android](https://github.com/budtmo/docker-android)
 
-<iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Ftech.mercari.com%2Fentry%2F2018%2F12%2F28%2F175147" style="border: 0; width: 100%; height: 190px;" allowfullscreen scrolling="no" allow="autoplay; encrypted-media"></iframe>
+<div><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Ftech.mercari.com%2Fentry%2F2018%2F12%2F28%2F175147" style="border: 0; width: 100%; height: 190px;" allowfullscreen scrolling="no" allow="autoplay; encrypted-media"></iframe></div>
 
 I used AWS bare metal instance (i3.metal) because this x86 Android Emulator is running inside this Docker container.
 
