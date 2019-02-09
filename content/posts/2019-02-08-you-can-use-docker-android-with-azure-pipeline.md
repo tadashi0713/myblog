@@ -12,6 +12,7 @@ tags:
   - English
   - Continuous Integration
   - Appium
+  - Docker
 ---
 Last year, I wrote blog about Android・Appium test environment using [Docker-Android](https://github.com/budtmo/docker-android)
 
@@ -28,3 +29,5 @@ I tried to use this for Docker-Android, and it worked!
 Sample code is following.
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 168px; padding-bottom: 0;"><a href="https://github.com/tadashi0713/azure-pipeline-appium" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2Ftadashi0713%2Fazure-pipeline-appium&amp;key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
+
+You can use docker inside Azure Pipeline, but I couldn`t find any solution for caching.
