@@ -25,6 +25,9 @@ const getIcon = (name) => {
     case 'facebook':
       icon = ICONS.FACEBOOK;
       break;
+    case 'feedly':
+      icon = ICONS.RSS;
+      break;
     default:
       icon = {};
       break;

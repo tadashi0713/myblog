@@ -42,6 +42,7 @@ export const Sidebar = (props) => (
                 facebook
                 github
                 rss
+                feedly
               }
             }
           }

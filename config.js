@@ -37,6 +37,7 @@ module.exports = {
       facebook: 'nemoto.tadashi',
       github: 'tadashi0713',
       rss: '/rss.xml',
+      feedly: '#',
     }
   }
 };
