@@ -89,7 +89,7 @@
     "jest": "24.1.0",
     "jest-cli": "24.1.0",
     "concurrently": "4.1.0",
-    "stylelint-scss": "3.5.2",
+    "stylelint-scss": "3.5.3",
     "eslint": "5.12.1",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.16.0",
