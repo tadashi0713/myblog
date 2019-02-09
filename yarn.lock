@@ -5946,6 +5946,16 @@ gatsby-plugin-netlify-cms@^3.0.9:
     netlify-identity-widget "^1.4.11"
     webpack "^4.16.0"
 
+gatsby-plugin-netlify-headers@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-headers/-/gatsby-plugin-netlify-headers-1.0.1.tgz#f41c11e9fd52d3d112e57c45cc9692763231af10"
+  integrity sha512-C3qB0ZP98QRjMX98HIeWFuPKKFd3YZkom6oB5YWLBvcNaXY6Y7hZXaDmi6oSen0ZKc6+YujJiQDzGVMx1T/MDQ==
+  dependencies:
+    babel-runtime "^6.26.0"
+    lodash "^4.17.4"
+    pify "3.0.0"
+    webpack-assets-manifest "^1.0.0"
+
 gatsby-plugin-netlify@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.0.6.tgz#2af2efe1c013a86d20365a49378dc70a2b8b6153"
@@ -9017,6 +9027,11 @@ lodash.keys@^3.0.0:
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
 
+lodash.keys@^4.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.keys/-/lodash.keys-4.2.0.tgz#a08602ac12e4fb83f91fc1fb7a360a4d9ba35205"
+  integrity sha1-oIYCrBLk+4P5H8H7ejYKTZujUgU=
+
 lodash.map@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
@@ -9029,13 +9044,18 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
 
-lodash.merge@^4.6.0, lodash.merge@^4.6.1:
+lodash.merge@^4.0, lodash.merge@^4.6.0, lodash.merge@^4.6.1:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
 
 lodash.mergewith@^4.6.0:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.1.tgz#639057e726c3afbdb3e7d42741caa8d6e4335927"
+
+lodash.pick@^4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
+  integrity sha1-UvBWEP/53tQiYRRB7R/BI6AwAbM=
 
 lodash.restparam@^3.0.0:
   version "3.6.1"
@@ -10904,13 +10924,13 @@ physical-cpu-count@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/physical-cpu-count/-/physical-cpu-count-2.0.0.tgz#18de2f97e4bf7a9551ad7511942b5496f7aba660"
 
+pify@3.0.0, pify@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
+
 pify@^2.0.0, pify@^2.2.0, pify@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
-
-pify@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
 
 pify@^4.0.0, pify@^4.0.1:
   version "4.0.1"
@@ -15048,6 +15068,19 @@ web-namespaces@^1.0.0, web-namespaces@^1.1.2:
 webidl-conversions@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
+
+webpack-assets-manifest@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/webpack-assets-manifest/-/webpack-assets-manifest-1.0.0.tgz#54a1bc4036e2eed2b3ce1fd6a7e31c09be99538a"
+  integrity sha1-VKG8QDbi7tKzzh/Wp+McCb6ZU4o=
+  dependencies:
+    chalk "^2.0"
+    lodash.get "^4.0"
+    lodash.has "^4.0"
+    lodash.keys "^4.0"
+    lodash.merge "^4.0"
+    lodash.pick "^4.0"
+    mkdirp "^0.5"
 
 webpack-assets-manifest@^3.0.2:
   version "3.1.0"
