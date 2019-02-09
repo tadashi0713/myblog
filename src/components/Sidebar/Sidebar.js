@@ -41,6 +41,7 @@ export const Sidebar = (props) => (
               contacts {
                 facebook
                 github
+                rss
               }
             }
           }
