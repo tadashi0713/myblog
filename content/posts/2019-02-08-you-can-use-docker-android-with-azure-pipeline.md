@@ -20,7 +20,9 @@ Last year, I wrote blog about Android・Appium test environment using [Docker-An
 
 I used AWS bare metal instance (i3.metal) because this x86 Android Emulator is running inside this Docker container.
 
-Recently, I found that we can run x86 Android Emulator in [Azure Pipeline](https://azure.microsoft.com/en-us/services/devops/pipelines/)
+Recently, I found that we can run x86 Android Emulator in Azure Pipeline
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 168px; padding-bottom: 0;"><a href="https://azure.microsoft.com/en-us/services/devops/pipelines/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fservices%2Fdevops%2Fpipelines%2F&key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
 
 It`s unlimited to use with OSS, so some repositories of Appium project are trying use.
 
