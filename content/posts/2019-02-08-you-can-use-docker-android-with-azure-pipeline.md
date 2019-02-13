@@ -4,6 +4,7 @@ title: You can use Docker-Android with Azure pipeline
 slug: docker_android_with_azure_pipeline
 draft: false
 date: 2019-02-08T05:12:50.387Z
+image: /media/スクリーンショット-2019-02-13-21.07.03.png
 description: >-
   Recently, I found that we can run x86 Android Emulator in Azure Pipeline. I
   tried to use this for Docker-Android for Appium testing, and it worked!
