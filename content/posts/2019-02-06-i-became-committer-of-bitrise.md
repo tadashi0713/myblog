@@ -4,6 +4,7 @@ title: I became contributor of Bitrise
 slug: became_contributer_bitrise
 draft: false
 date: 2019-02-06T02:30:00.000Z
+image: /media/monthly-community-highlights.png
 description: >-
   I`m in the list of contributors of Bitrise project.
 
@@ -16,6 +17,8 @@ tags:
   - Continuous Integration
   - Automation
 ---
+![](/media/monthly-community-highlights.png)
+
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 168px; padding-bottom: 0;"><a href="https://blog.bitrise.io/bitrise-contributor-hall-of-fame-january" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fblog.bitrise.io%2Fbitrise-contributor-hall-of-fame-january&amp;key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
 
 I`m in the list of committers of Bitrise project.
