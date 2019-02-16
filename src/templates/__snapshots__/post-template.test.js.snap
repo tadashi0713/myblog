@@ -216,34 +216,6 @@ exports[`PostTemplate renders correctly 1`] = `
             </div>
           </div>
         </li>
-        <li
-          className="share_button"
-        >
-          <a
-            aria-label="share_hatena-bookmark"
-            className="hatena-bookmark-button"
-            data-hatena-bookmark-layout="touch-counter"
-            href="http://b.hatena.ne.jp/entry/"
-            style={
-              Object {
-                "boxShadow": "none",
-              }
-            }
-            title="このエントリーをはてなブックマークに追加"
-          >
-            <img
-              alt="このエントリーをはてなブックマークに追加"
-              height="24"
-              src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
-              style={
-                Object {
-                  "border": "none",
-                }
-              }
-              width="24"
-            />
-          </a>
-        </li>
       </ul>
       <div
         className="meta"
