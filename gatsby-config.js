@@ -172,16 +172,6 @@ module.exports = {
           camelCase: false,
         }
       }
-    },
-    {
-      resolve: 'gatsby-plugin-netlify-headers',
-      options: {
-        headers: {
-          '/*': [
-            'X-Frame-Options: allow-from https://tadashi0713.com',
-          ],
-        },
-      }
     }
   ]
 };

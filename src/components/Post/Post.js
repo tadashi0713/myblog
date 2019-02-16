@@ -5,7 +5,7 @@ import Comments from './Comments';
 import Content from './Content';
 import Meta from './Meta';
 import Tags from './Tags';
-import SNSShare from './SNSShare';
+import SNSShare from '../SNSShare';
 import styles from './Post.module.scss';
 import Iframely from '../Iframely';
 
