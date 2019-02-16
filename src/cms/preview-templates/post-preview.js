@@ -1,5 +1,5 @@
 import React from 'react';
-import Iframely from '../../components/Iframely'
+import Iframely from '../../components/Iframely';
 
 const PostPreview = ({ entry, widgetFor }) => {
   const body = widgetFor('body');

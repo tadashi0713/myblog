@@ -7,7 +7,7 @@ import Meta from './Meta';
 import Tags from './Tags';
 import SNSShare from '../SNSShare';
 import styles from './Post.module.scss';
-import Iframely from '../Iframely/Iframely';
+import Iframely from '../Iframely';
 
 const siteConfig = require('../../../config.js');
 
