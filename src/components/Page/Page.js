@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Page.module.scss';
-import Iframely from '../Iframely';
+import Iframely from '../Iframely/Iframely';
 
 const Page = ({ title, children }) => (
   <div className={styles['page']}>
