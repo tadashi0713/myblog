@@ -9,12 +9,16 @@ import {
   LineShareButton,
   LineIcon
 } from 'react-share';
+import Helmet from 'react-helmet';
 import styles from './SNSShare.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGetPocket } from '@fortawesome/free-brands-svg-icons';
 
 const SNSShare = ({ postUrl, postTitle }) => (
   <ul className={styles.content}>
+    <Helmet>
+      <script type="text/javascript" src="//widgets.getpocket.com/v1/j/btn.js?v=1" charSet="utf-8" async="async"/>
+    </Helmet>
     <li className={styles.share_button}>
       <FacebookShareButton url={postUrl}>
         <FacebookIcon size={32} round />
