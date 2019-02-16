@@ -21,7 +21,8 @@ const getContactHref = (name, contact) => {
       href = `https://www.facebook.com/${contact}`;
       break;
     case 'feedly':
-      href = `https://feedly.com/${contact}`
+      href = `${contact}`;
+      break;
     default:
       href = contact;
       break;
