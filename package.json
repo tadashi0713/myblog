@@ -40,6 +40,7 @@
     "bluebird": "^3.5.2",
     "classnames": "^2.2.6",
     "codecov": "^3.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
     "gatsby": "^2.0.76",
     "gatsby-link": "^2.0.8",
     "gatsby-plugin-catch-links": "^2.0.9",
