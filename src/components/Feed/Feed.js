@@ -2,6 +2,9 @@ import React from 'react';
 import moment from 'moment';
 import { Link } from 'gatsby';
 import styles from './Feed.module.scss';
+import SNSShare from '../SNSShare';
+
+const siteConfig = require('../../../config.js');
 
 const Feed = ({ edges }) => (
   <div className={styles['feed']}>
@@ -20,6 +23,7 @@ const Feed = ({ edges }) => (
           <Link className={styles['feed__item-title-link']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
         </h2>
         <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>
+        <SNSShare postUrl={`${siteConfig.url}${edge.node.fields.slug}`} postTitle={edge.node.frontmatter.title}/>
         <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>Read</Link>
       </div>
     ))}
