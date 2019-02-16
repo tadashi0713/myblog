@@ -10,9 +10,9 @@ import {
   LineIcon
 } from 'react-share';
 import Helmet from 'react-helmet';
-import styles from './SNSShare.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGetPocket } from '@fortawesome/free-brands-svg-icons';
+import styles from './SNSShare.module.scss';
 
 const SNSShare = ({ postUrl, postTitle }) => (
   <ul className={styles.content}>
@@ -44,7 +44,7 @@ const SNSShare = ({ postUrl, postTitle }) => (
         aria-label="share_pocket"
         className={styles.pocket_icon_link}
         href={`https://getpocket.com/edit?url=${postUrl}&title=${postTitle}`}
-        onClick={`window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;`}>
+        onClick={'window.open(this.href, \'PCwindow\', \'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes\'); return false;'}>
         <FontAwesomeIcon
           color="#fff"
           className={styles.pocket_icon}
