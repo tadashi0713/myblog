@@ -5,7 +5,7 @@ import SNSShare from './SNSShare';
 describe('SNSShare', () => {
   const props = {
     postTitle: 'Sample',
-    postUrl: 'https://tadashi0713.com/'
+    postUrl: 'https://tadashi0713.com/sample'
   };
 
   it('renders correctly', () => {

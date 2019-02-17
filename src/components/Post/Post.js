@@ -21,7 +21,7 @@ const Post = ({ post }) => {
   const { html } = post;
   const { slug, tagSlugs } = post.fields;
 
-  const postUrl = `${siteConfig.url}${slug}`;
+  const postUrl = `${siteConfig.url}/${slug}`;
 
   return (
     <div className={styles['post']}>
