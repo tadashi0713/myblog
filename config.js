@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://tadashi0713.com/',
+  url: 'https://tadashi0713.com',
   title: 'Blog by Tadashi Nemoto',
   subtitle: 'Automation Engineer',
   disqusShortname: 'https-tadashi0713-com',
