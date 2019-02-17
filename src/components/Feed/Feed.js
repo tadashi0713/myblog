@@ -23,7 +23,7 @@ const Feed = ({ edges }) => (
           <Link className={styles['feed__item-title-link']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
         </h2>
         <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>
-        <SNSShare postUrl={`${siteConfig.url}${edge.node.fields.slug}`} postTitle={edge.node.frontmatter.title}/>
+        <SNSShare postUrl={`${siteConfig.url}/${edge.node.fields.slug}`} postTitle={edge.node.frontmatter.title}/>
         <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>Read</Link>
       </div>
     ))}

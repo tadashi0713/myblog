@@ -186,7 +186,7 @@ exports[`SNSShare renders correctly 1`] = `
     <a
       aria-label="share_pocket"
       className="pocket_icon_link"
-      href="https://getpocket.com/edit?url=https://tadashi0713.com/&title=Sample"
+      href="https://getpocket.com/edit?url=https://tadashi0713.com/sample&title=Sample"
       onClick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"
     >
       <svg
