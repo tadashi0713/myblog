@@ -14,7 +14,8 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 module.exports = {
   siteMetadata: {
-    url: siteUrl,
+    url: siteConfig.url,
+    siteUrl: siteUrl,
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
     disqusShortname: siteConfig.disqusShortname,
