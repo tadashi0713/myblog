@@ -44,6 +44,7 @@ exports[`PostTemplate renders correctly 1`] = `
           className="share_button"
         >
           <div
+            aria-label="share_facebook"
             className="SocialMediaShareButton SocialMediaShareButton--facebook"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -88,6 +89,7 @@ exports[`PostTemplate renders correctly 1`] = `
           className="share_button"
         >
           <div
+            aria-label="share_twitter"
             className="SocialMediaShareButton SocialMediaShareButton--twitter"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -132,6 +134,7 @@ exports[`PostTemplate renders correctly 1`] = `
           className="share_button"
         >
           <div
+            aria-label="share_linkedin"
             className="SocialMediaShareButton SocialMediaShareButton--linkedin"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -176,6 +179,7 @@ exports[`PostTemplate renders correctly 1`] = `
           className="share_button"
         >
           <div
+            aria-label="share_line"
             className="SocialMediaShareButton SocialMediaShareButton--line"
             onClick={[Function]}
             onKeyPress={[Function]}

@@ -20,22 +20,22 @@ const SNSShare = ({ postUrl, postTitle }) => (
       <script type="text/javascript" src="//widgets.getpocket.com/v1/j/btn.js?v=1" charSet="utf-8" async="async"/>
     </Helmet>
     <li className={styles.share_button}>
-      <FacebookShareButton url={postUrl}>
+      <FacebookShareButton additionalProps={{ 'aria-label': 'share_facebook' }} url={postUrl}>
         <FacebookIcon size={32} round />
       </FacebookShareButton>
     </li>
     <li className={styles.share_button}>
-      <TwitterShareButton title={postTitle} url={postUrl}>
+      <TwitterShareButton additionalProps={{ 'aria-label': 'share_twitter' }} title={postTitle} url={postUrl}>
         <TwitterIcon size={32} round />
       </TwitterShareButton>
     </li>
     <li className={styles.share_button}>
-      <LinkedinShareButton url={postUrl}>
+      <LinkedinShareButton additionalProps={{ 'aria-label': 'share_linkedin' }} url={postUrl}>
         <LinkedinIcon size={32} round />
       </LinkedinShareButton>
     </li>
     <li className={styles.share_button}>
-      <LineShareButton title={postTitle} url={postUrl}>
+      <LineShareButton additionalProps={{ 'aria-label': 'share_line' }} title={postTitle} url={postUrl}>
         <LineIcon size={32} round />
       </LineShareButton>
     </li>
