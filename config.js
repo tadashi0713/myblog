@@ -27,6 +27,10 @@ module.exports = {
     {
       label: 'Slides',
       path: '/pages/slides'
+    },
+    {
+      label: 'Contact',
+      path: '/contact'
     }
   ],
   author: {

@@ -11,10 +11,59 @@ const ContactTemplate = ({ data }) => {
   } = data.site.siteMetadata;
 
   return (
-    <Layout title={`Contact me - ${title}`} description={subtitle}>
+    <Layout title={`Contact - ${title}`} description={subtitle}>
       <Sidebar />
-      <Page title="Contact me">
-        <p>Contact</p>
+      <Page title="Contact">
+        <form
+          name="contact"
+          method="post"
+          action="/thanks/"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          // onSubmit={this.handleSubmit}
+        >
+          <p hidden>
+            <label>
+              Don’t fill this out:{" "}
+              <input
+                name="bot-field"
+                // onChange={this.handleChange}
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your name:<br />
+              <input
+                type="text"
+                name="name"
+                // onChange={this.handleChange}
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your email:<br />
+              <input
+                type="email"
+                name="email"
+                // onChange={this.handleChange}
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message:<br />
+              <textarea
+                name="message"
+                // onChange={this.handleChange}
+              />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
       </Page>
     </Layout>
   );
