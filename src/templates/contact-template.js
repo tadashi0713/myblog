@@ -5,6 +5,12 @@ import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 export default class ContactTemplate extends React.Component {
   // const {
   //   title,
@@ -17,6 +23,21 @@ export default class ContactTemplate extends React.Component {
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state
+      })
+    })
+      .then(() => console.log('Hello'))
+      .catch(error => alert(error));
   };
 
   render() {
@@ -36,7 +57,7 @@ export default class ContactTemplate extends React.Component {
             action="/thanks/"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            // onSubmit={this.handleSubmit}
+            onSubmit={this.handleSubmit}
           >
             <Form.Group controlId="bot-field" hidden>
               <Form.Label>Don’t fill this out:{' '}</Form.Label>
