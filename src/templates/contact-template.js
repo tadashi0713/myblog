@@ -7,8 +7,8 @@ import Page from '../components/Page';
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
+    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&');
 }
 
 export default class ContactTemplate extends React.Component {
@@ -21,28 +21,28 @@ export default class ContactTemplate extends React.Component {
     this.state = {};
   }
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        "form-name": form.getAttribute("name"),
+        'form-name': form.getAttribute('name'),
         ...this.state
       })
     })
       .then(() => console.log('Hello'))
-      .catch(error => alert(error));
+      .catch((error) => alert(error));
   };
 
   render() {
     return (
-      <Layout title={`Contact - title`} description='subtitle'>
+      <Layout title={'Contact - title'} description='subtitle'>
         <link
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -95,7 +95,7 @@ export default class ContactTemplate extends React.Component {
       </Layout>
     );
   }
-};
+}
 
 export const query = graphql`
   query ContactQuery {
