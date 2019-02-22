@@ -21,24 +21,7 @@ const ContactTemplate = ({ data }) => {
       />
       <Sidebar />
       <Page title="Contact">
-        <Form>
-          <Form.Group controlId="name">
-            <Form.Label>Your name / お名前</Form.Label>
-            <Form.Control type="text" />
-          </Form.Group>
-          <Form.Group controlId="email">
-            <Form.Label>Your Email / メールアドレス</Form.Label>
-            <Form.Control type="email" />
-          </Form.Group>
-          <Form.Group controlId="message">
-            <Form.Label>Message / お問い合わせ内容</Form.Label>
-            <Form.Control as="textarea" rows="3" />
-          </Form.Group>
-          <Button variant="primary" type="submit">
-            Send
-          </Button>
-        </Form>
-        <form
+        <Form
           name="contact"
           method="post"
           action="/thanks/"
@@ -46,48 +29,38 @@ const ContactTemplate = ({ data }) => {
           data-netlify-honeypot="bot-field"
           // onSubmit={this.handleSubmit}
         >
-          <p hidden>
-            <label>
-              Don’t fill this out:{' '}
-              <input
-                name="bot-field"
-                // onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your name:<br />
-              <input
-                type="text"
-                name="name"
-                // onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your email:<br />
-              <input
-                type="email"
-                name="email"
-                // onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message:<br />
-              <textarea
-                name="message"
-                // onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
+          <Form.Group controlId="bot-field" hidden>
+            <Form.Label>Don’t fill this out:{' '}</Form.Label>
+            <Form.Control
+              // onChange={this.handleChange}
+            />
+          </Form.Group>
+          <Form.Group controlId="name">
+            <Form.Label>Your name / お名前</Form.Label>
+            <Form.Control
+              type="text"
+              // onChange={this.handleChange}
+            />
+          </Form.Group>
+          <Form.Group controlId="email">
+            <Form.Label>Your Email / メールアドレス</Form.Label>
+            <Form.Control
+              type="email"
+              // onChange={this.handleChange}
+            />
+          </Form.Group>
+          <Form.Group controlId="message">
+            <Form.Label>Message / お問い合わせ内容</Form.Label>
+            <Form.Control
+              as="textarea"
+              rows="3"
+              // onChange={this.handleChange}
+            />
+          </Form.Group>
+          <Button variant="primary" type="submit">
+            Send
+          </Button>
+        </Form>
       </Page>
     </Layout>
   );
