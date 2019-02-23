@@ -57,33 +57,37 @@ export default class ContactTemplate extends React.Component {
             data-netlify-honeypot="bot-field"
             onSubmit={this.handleSubmit}
           >
-            <Form.Group controlId="bot-field" hidden>
+            <Form.Group hidden>
               <Form.Label>Don’t fill this out:{' '}</Form.Label>
               <Form.Control
+                name="bot-field"
                 onChange={this.handleChange}
               />
             </Form.Group>
-            <Form.Group controlId="name">
+            <Form.Group>
               <Form.Label>Your name / お名前</Form.Label>
               <Form.Control
                 type="text"
+                name="name"
                 onChange={this.handleChange}
                 required={true}
               />
             </Form.Group>
-            <Form.Group controlId="email">
+            <Form.Group>
               <Form.Label>Your Email / メールアドレス</Form.Label>
               <Form.Control
                 type="email"
+                name="email"
                 onChange={this.handleChange}
                 required={true}
               />
             </Form.Group>
-            <Form.Group controlId="message">
+            <Form.Group>
               <Form.Label>Message / お問い合わせ内容</Form.Label>
               <Form.Control
                 as="textarea"
                 rows="5"
+                name="message"
                 onChange={this.handleChange}
                 required={true}
               />
