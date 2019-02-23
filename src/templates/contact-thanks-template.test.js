@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import ContactThanksTemplate from './contact-thanks-template'
+import ContactThanksTemplate from './contact-thanks-template';
 
 describe('ContactThanksTemplate', () => {
   const props = {

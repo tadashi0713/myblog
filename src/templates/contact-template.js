@@ -1,5 +1,5 @@
 import React from 'react';
-import { navigate } from 'gatsby-link'
+import { navigate } from 'gatsby-link';
 import { Button, Form } from 'react-bootstrap';
 import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';

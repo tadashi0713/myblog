@@ -22,13 +22,13 @@ exports[`ContactTemplate renders correctly 1`] = `
       <h1
         className="page__title"
       >
-        Contact
+        Contact / お問い合わせ
       </h1>
       <div
         className="page__body"
       >
         <form
-          action="/thanks/"
+          action="/contact/thanks/"
           className=""
           data-netlify="true"
           data-netlify-honeypot="bot-field"
@@ -105,7 +105,7 @@ exports[`ContactTemplate renders correctly 1`] = `
             />
           </div>
           <button
-            className="btn btn-primary"
+            className="btn btn-warning"
             disabled={false}
             type="submit"
           >

@@ -16,13 +16,15 @@ exports[`ContactThanksTemplate renders correctly 1`] = `
       <h1
         className="page__title"
       >
-        Thank you
+        Thank you!
       </h1>
       <div
         className="page__body"
       >
         <p>
-          Thank you for contact
+          Thank you for your contact.
+          <br />
+          お問い合わせありがとうございます。
         </p>
       </div>
     </div>
