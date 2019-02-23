@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { navigate } from 'gatsby-link'
 import { Button, Form } from 'react-bootstrap';
 import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
@@ -12,10 +12,6 @@ function encode(data) {
 }
 
 export default class ContactTemplate extends React.Component {
-  // const {
-  //   title,
-  //   subtitle
-  // } = data.site.siteMetadata;
   constructor(props) {
     super(props);
     this.state = {};
@@ -36,7 +32,7 @@ export default class ContactTemplate extends React.Component {
         ...this.state
       })
     })
-      .then(() => console.log('Hello'))
+      .then(() => navigate(form.getAttribute('action')))
       .catch((error) => alert(error));
   };
 
@@ -54,7 +50,7 @@ export default class ContactTemplate extends React.Component {
           <Form
             name="contact"
             method="post"
-            action="/thanks/"
+            action="/contact/thanks/"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             onSubmit={this.handleSubmit}
@@ -99,14 +95,3 @@ export default class ContactTemplate extends React.Component {
     );
   }
 }
-
-export const query = graphql`
-  query ContactQuery {
-    site {
-      siteMetadata {
-        title
-        subtitle
-      }
-    }
-  }
-`;
