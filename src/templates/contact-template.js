@@ -70,6 +70,7 @@ export default class ContactTemplate extends React.Component {
               <Form.Control
                 type="text"
                 onChange={this.handleChange}
+                required={true}
               />
             </Form.Group>
             <Form.Group controlId="email">
@@ -77,6 +78,7 @@ export default class ContactTemplate extends React.Component {
               <Form.Control
                 type="email"
                 onChange={this.handleChange}
+                required={true}
               />
             </Form.Group>
             <Form.Group controlId="message">
@@ -85,6 +87,7 @@ export default class ContactTemplate extends React.Component {
                 as="textarea"
                 rows="5"
                 onChange={this.handleChange}
+                required={true}
               />
             </Form.Group>
             <Button variant="primary" type="submit">

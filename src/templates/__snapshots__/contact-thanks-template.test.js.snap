@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactThanksTemplate renders correctly 1`] = `
+<div
+  className="layout"
+>
+  <StaticQuery
+    render={[Function]}
+  />
+  <div
+    className="page"
+  >
+    <div
+      className="page__inner"
+    >
+      <h1
+        className="page__title"
+      >
+        Thank you
+      </h1>
+      <div
+        className="page__body"
+      >
+        <p>
+          Thank you for contact
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

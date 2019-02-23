@@ -4,6 +4,12 @@ exports[`ContactTemplate renders correctly 1`] = `
 <div
   className="layout"
 >
+  <link
+    crossOrigin="anonymous"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    rel="stylesheet"
+  />
   <StaticQuery
     render={[Function]}
   />
@@ -16,14 +22,96 @@ exports[`ContactTemplate renders correctly 1`] = `
       <h1
         className="page__title"
       >
-        Contact me
+        Contact
       </h1>
       <div
         className="page__body"
       >
-        <p>
-          Contact
-        </p>
+        <form
+          action="/thanks/"
+          className=""
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          method="post"
+          name="contact"
+          onSubmit={[Function]}
+        >
+          <div
+            className="form-group"
+            hidden={true}
+          >
+            <label
+              className="form-label"
+              htmlFor="bot-field"
+            >
+              Don’t fill this out:
+               
+            </label>
+            <input
+              className="form-control"
+              id="bot-field"
+              onChange={[Function]}
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              className="form-label"
+              htmlFor="name"
+            >
+              Your name / お名前
+            </label>
+            <input
+              className="form-control"
+              id="name"
+              onChange={[Function]}
+              required={true}
+              type="text"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              className="form-label"
+              htmlFor="email"
+            >
+              Your Email / メールアドレス
+            </label>
+            <input
+              className="form-control"
+              id="email"
+              onChange={[Function]}
+              required={true}
+              type="email"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              className="form-label"
+              htmlFor="message"
+            >
+              Message / お問い合わせ内容
+            </label>
+            <textarea
+              className="form-control"
+              id="message"
+              onChange={[Function]}
+              required={true}
+              rows="5"
+            />
+          </div>
+          <button
+            className="btn btn-primary"
+            disabled={false}
+            type="submit"
+          >
+            Send
+          </button>
+        </form>
       </div>
     </div>
   </div>
