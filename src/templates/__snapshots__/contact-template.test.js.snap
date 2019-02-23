@@ -32,6 +32,7 @@ exports[`ContactTemplate renders correctly 1`] = `
           className=""
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
           method="post"
           name="contact"
           onSubmit={[Function]}
@@ -42,14 +43,13 @@ exports[`ContactTemplate renders correctly 1`] = `
           >
             <label
               className="form-label"
-              htmlFor="bot-field"
             >
               Don’t fill this out:
                
             </label>
             <input
               className="form-control"
-              id="bot-field"
+              name="bot-field"
               onChange={[Function]}
             />
           </div>
@@ -58,13 +58,12 @@ exports[`ContactTemplate renders correctly 1`] = `
           >
             <label
               className="form-label"
-              htmlFor="name"
             >
               Your name / お名前
             </label>
             <input
               className="form-control"
-              id="name"
+              name="name"
               onChange={[Function]}
               required={true}
               type="text"
@@ -75,13 +74,12 @@ exports[`ContactTemplate renders correctly 1`] = `
           >
             <label
               className="form-label"
-              htmlFor="email"
             >
               Your Email / メールアドレス
             </label>
             <input
               className="form-control"
-              id="email"
+              name="email"
               onChange={[Function]}
               required={true}
               type="email"
@@ -92,18 +90,19 @@ exports[`ContactTemplate renders correctly 1`] = `
           >
             <label
               className="form-label"
-              htmlFor="message"
             >
               Message / お問い合わせ内容
             </label>
             <textarea
               className="form-control"
-              id="message"
+              name="message"
               onChange={[Function]}
               required={true}
               rows="5"
             />
           </div>
+          <div />
+          <br />
           <button
             className="btn btn-warning"
             disabled={false}

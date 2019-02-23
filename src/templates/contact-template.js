@@ -1,10 +1,10 @@
 import React from 'react';
 import { navigate } from 'gatsby-link';
 import { Button, Form } from 'react-bootstrap';
+import Recaptcha from 'react-google-recaptcha';
 import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
-import Recaptcha from "react-google-recaptcha";
 
 const siteConfig = require('../../config');
 
@@ -26,8 +26,8 @@ export default class ContactTemplate extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  handleRecaptcha = value => {
-    this.setState({ "g-recaptcha-response": value });
+  handleRecaptcha = (value) => {
+    this.setState({ 'g-recaptcha-response': value });
   };
 
   handleSubmit = (e) => {
@@ -105,6 +105,7 @@ export default class ContactTemplate extends React.Component {
               sitekey={RECAPTCHA_KEY}
               onChange={this.handleRecaptcha}
             />
+            <br />
             <Button variant="warning" type="submit">
               Send
             </Button>
