@@ -4,8 +4,11 @@ import { Button, Form } from 'react-bootstrap';
 import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
+import Recaptcha from "react-google-recaptcha";
 
 const siteConfig = require('../../config');
+
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
 function encode(data) {
   return Object.keys(data)
@@ -21,6 +24,10 @@ export default class ContactTemplate extends React.Component {
 
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleRecaptcha = value => {
+    this.setState({ "g-recaptcha-response": value });
   };
 
   handleSubmit = (e) => {
@@ -55,6 +62,7 @@ export default class ContactTemplate extends React.Component {
             action="/contact/thanks/"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
             onSubmit={this.handleSubmit}
           >
             <Form.Group hidden>
@@ -92,6 +100,11 @@ export default class ContactTemplate extends React.Component {
                 required={true}
               />
             </Form.Group>
+            <Recaptcha
+              ref="recaptcha"
+              sitekey={RECAPTCHA_KEY}
+              onChange={this.handleRecaptcha}
+            />
             <Button variant="warning" type="submit">
               Send
             </Button>
