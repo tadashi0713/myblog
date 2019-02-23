@@ -5,6 +5,8 @@ import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
 
+const siteConfig = require('../../config');
+
 function encode(data) {
   return Object.keys(data)
     .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
@@ -38,7 +40,7 @@ export default class ContactTemplate extends React.Component {
 
   render() {
     return (
-      <Layout title={'Contact - title'} description='subtitle'>
+      <Layout title={`Contact - ${siteConfig.title}`} description={siteConfig.subtitle}>
         <link
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -46,7 +48,7 @@ export default class ContactTemplate extends React.Component {
           crossOrigin="anonymous"
         />
         <Sidebar />
-        <Page title="Contact">
+        <Page title="Contact / お問い合わせ">
           <Form
             name="contact"
             method="post"
@@ -86,7 +88,7 @@ export default class ContactTemplate extends React.Component {
                 required={true}
               />
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button variant="warning" type="submit">
               Send
             </Button>
           </Form>
