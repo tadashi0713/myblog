@@ -27,7 +27,6 @@ Gatsby is static site generator using React.
 
 It`s based on React, so you can easily customize views using React.
 
-<br />
 Netlify is static hosting service which has many features such as DNS, CMS and SSL.
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 168px; padding-bottom: 0;"><a href="https://www.netlify.com/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.netlify.com%2F&key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
