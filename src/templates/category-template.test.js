@@ -27,7 +27,8 @@ describe('CategoryTemplate', () => {
                 date: '2016-09-01',
                 description: 'test_0',
                 category: 'test',
-                title: 'test_0'
+                title: 'test_0',
+                image: '/media/test_0.png'
               }
             }
           },
@@ -41,7 +42,8 @@ describe('CategoryTemplate', () => {
                 date: '2016-09-01',
                 description: 'test_1',
                 category: 'test',
-                title: 'test_1'
+                title: 'test_1',
+                image: '/media/test_1.png'
               }
             }
           }
