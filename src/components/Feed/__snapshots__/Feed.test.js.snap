@@ -40,6 +40,9 @@ exports[`Feed renders correctly 1`] = `
         test_0
       </Link>
     </h2>
+    <img
+      src="/media/test_0.png"
+    />
     <p
       className="feed__item-description"
     >
@@ -301,6 +304,9 @@ exports[`Feed renders correctly 1`] = `
         test_1
       </Link>
     </h2>
+    <img
+      src="/media/test_1.png"
+    />
     <p
       className="feed__item-description"
     >
