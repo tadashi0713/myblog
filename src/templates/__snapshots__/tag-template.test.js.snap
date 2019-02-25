@@ -60,6 +60,7 @@ exports[`TagTemplate renders correctly 1`] = `
                 test_0
               </Link>
             </h2>
+            <img />
             <p
               className="feed__item-description"
             >
@@ -321,6 +322,7 @@ exports[`TagTemplate renders correctly 1`] = `
                 test_1
               </Link>
             </h2>
+            <img />
             <p
               className="feed__item-description"
             >
