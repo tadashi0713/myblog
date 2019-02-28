@@ -5,8 +5,8 @@ slug: embed_link_using_iframely
 draft: false
 date: 2019-02-28T10:37:00.000Z
 image: /media/スクリーンショット-2019-02-28-18.51.28.png
-description: >-
-  I wanted to embed links like that in my Gatsby blog, therefore I started to
+description: >
+  I wanted to embed beautiful links in my Gatsby blog, therefore I started to
   use service called Iframely.
 category: Blog
 tags:
