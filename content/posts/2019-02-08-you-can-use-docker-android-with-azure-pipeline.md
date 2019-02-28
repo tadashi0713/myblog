@@ -35,4 +35,29 @@ Sample code is following.
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 168px; padding-bottom: 0;"><a href="https://github.com/tadashi0713/azure-pipeline-appium" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2Ftadashi0713%2Fazure-pipeline-appium&amp;key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
 
+```yaml
+trigger:
+- master
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.7'
+    architecture: 'x64'
+
+- script: |
+    docker-compose up -d
+    sleep 60
+  displayName: 'Set up Docker-Android'
+
+- script: |
+    python -m pip install pipenv
+    pipenv install
+    pipenv run python app_simple.py
+  displayName: 'Run tests'
+```
+
 You can use docker inside Azure Pipeline, but I couldn`t find any solution for caching.
