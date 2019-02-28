@@ -55,9 +55,13 @@ exports[`IndexTemplate renders correctly 1`] = `
                 test_0
               </Link>
             </h2>
-            <img
-              src="/media/test_0.png"
-            />
+            <Link
+              to="/test_0"
+            >
+              <img
+                src="/media/test_0.png"
+              />
+            </Link>
             <p
               className="feed__item-description"
             >
@@ -319,9 +323,13 @@ exports[`IndexTemplate renders correctly 1`] = `
                 test_1
               </Link>
             </h2>
-            <img
-              src="/media/test_1.png"
-            />
+            <Link
+              to="/test_1"
+            >
+              <img
+                src="/media/test_1.png"
+              />
+            </Link>
             <p
               className="feed__item-description"
             >
