@@ -3,7 +3,7 @@ template: post
 title: Embedding beautiful links to Gatsby site using Iframely
 slug: embed_link_using_iframely
 draft: false
-date: 2019-02-28T10:48:00.000Z
+date: 2019-02-28T10:37:00.000Z
 image: /media/スクリーンショット-2019-02-28-18.51.28.png
 description: 'As I wrote last post, this is created using Gatsby.'
 category: Blog
