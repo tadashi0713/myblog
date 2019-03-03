@@ -11,6 +11,7 @@ exports[`Contacts renders correctly 1`] = `
       className="contacts__list-item"
     >
       <a
+        aria-label="email"
         className="contacts__list-item-link"
         href="mailto:#"
         rel="noopener noreferrer"
@@ -30,6 +31,7 @@ exports[`Contacts renders correctly 1`] = `
       className="contacts__list-item"
     >
       <a
+        aria-label="twitter"
         className="contacts__list-item-link"
         href="https://www.twitter.com/#"
         rel="noopener noreferrer"
@@ -49,6 +51,7 @@ exports[`Contacts renders correctly 1`] = `
       className="contacts__list-item"
     >
       <a
+        aria-label="vkontakte"
         className="contacts__list-item-link"
         href="https://vk.com/#"
         rel="noopener noreferrer"
@@ -68,6 +71,7 @@ exports[`Contacts renders correctly 1`] = `
       className="contacts__list-item"
     >
       <a
+        aria-label="github"
         className="contacts__list-item-link"
         href="https://github.com/#"
         rel="noopener noreferrer"
@@ -87,6 +91,7 @@ exports[`Contacts renders correctly 1`] = `
       className="contacts__list-item"
     >
       <a
+        aria-label="rss"
         className="contacts__list-item-link"
         href="#"
         rel="noopener noreferrer"
@@ -106,6 +111,7 @@ exports[`Contacts renders correctly 1`] = `
       className="contacts__list-item"
     >
       <a
+        aria-label="telegram"
         className="contacts__list-item-link"
         href="telegram:#"
         rel="noopener noreferrer"
