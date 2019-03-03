@@ -64,6 +64,7 @@ exports[`CategoryTemplate renders correctly 1`] = `
               to="/test_0"
             >
               <img
+                alt="test_0"
                 src="/media/test_0.png"
               />
             </Link>
@@ -350,6 +351,7 @@ exports[`CategoryTemplate renders correctly 1`] = `
               to="/test_1"
             >
               <img
+                alt="test_1"
                 src="/media/test_1.png"
               />
             </Link>

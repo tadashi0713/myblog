@@ -24,7 +24,7 @@ const Feed = ({ edges }) => (
           <Link className={styles['feed__item-title-link']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
         </h2>
         <Link to={edge.node.fields.slug}>
-          <img src={edge.node.frontmatter.image}></img>
+          <img src={edge.node.frontmatter.image} alt={edge.node.frontmatter.title}></img>
         </Link>
         <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>
         <MiniTags tags={edge.node.frontmatter.tags} tagSlugs={edge.node.fields.tagSlugs}/>
