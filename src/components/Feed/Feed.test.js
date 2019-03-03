@@ -9,14 +9,20 @@ describe('Feed', () => {
         node: {
           fields: {
             slug: '/test_0',
-            categorySlug: '/test_0'
+            categorySlug: '/test_0',
+            tagSlugs: [
+              '/test_0'
+            ]
           },
           frontmatter: {
             date: '2016-09-01',
             description: 'test_0',
             category: 'test_0',
             title: 'test_0',
-            image: '/media/test_0.png'
+            image: '/media/test_0.png',
+            tags: [
+              'test_0'
+            ]
           }
         }
       },
@@ -24,14 +30,20 @@ describe('Feed', () => {
         node: {
           fields: {
             slug: '/test_1',
-            categorySlug: '/test_1'
+            categorySlug: '/test_1',
+            tagSlugs: [
+              '/test_1'
+            ]
           },
           frontmatter: {
             date: '2016-09-01',
             description: 'test_1',
             category: 'test_1',
             title: 'test_1',
-            image: '/media/test_1.png'
+            image: '/media/test_1.png',
+            tags: [
+              'test_1'
+            ]
           }
         }
       }

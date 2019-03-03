@@ -3,7 +3,7 @@ import moment from 'moment';
 import { Link } from 'gatsby';
 import styles from './Feed.module.scss';
 import SNSShare from '../SNSShare';
-import MiniTags from './MiniTags'
+import MiniTags from './MiniTags';
 
 const siteConfig = require('../../../config.js');
 

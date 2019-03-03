@@ -21,14 +21,20 @@ describe('CategoryTemplate', () => {
             node: {
               fields: {
                 slug: '/test_0',
-                categorySlug: '/test'
+                categorySlug: '/test',
+                tagSlugs: [
+                  '/test_0'
+                ]
               },
               frontmatter: {
                 date: '2016-09-01',
                 description: 'test_0',
                 category: 'test',
                 title: 'test_0',
-                image: '/media/test_0.png'
+                image: '/media/test_0.png',
+                tags: [
+                  'test_0'
+                ]
               }
             }
           },
@@ -36,14 +42,20 @@ describe('CategoryTemplate', () => {
             node: {
               fields: {
                 slug: '/test_1',
-                categorySlug: '/test'
+                categorySlug: '/test',
+                tagSlugs: [
+                  '/test_1'
+                ]
               },
               frontmatter: {
                 date: '2016-09-01',
                 description: 'test_1',
                 category: 'test',
                 title: 'test_1',
-                image: '/media/test_1.png'
+                image: '/media/test_1.png',
+                tags: [
+                  'test_1'
+                ]
               }
             }
           }
