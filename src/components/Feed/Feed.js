@@ -3,7 +3,7 @@ import moment from 'moment';
 import { Link } from 'gatsby';
 import styles from './Feed.module.scss';
 import SNSShare from '../SNSShare';
-import Tags from '../Post/Tags'
+import MiniTags from './MiniTags'
 
 const siteConfig = require('../../../config.js');
 
@@ -27,7 +27,7 @@ const Feed = ({ edges }) => (
           <img src={edge.node.frontmatter.image}></img>
         </Link>
         <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>
-        <Tags tags={edge.node.frontmatter.tags} tagSlugs={edge.node.fields.tagSlugs}/>
+        <MiniTags tags={edge.node.frontmatter.tags} tagSlugs={edge.node.fields.tagSlugs}/>
         <SNSShare postUrl={`${siteConfig.url}/${edge.node.fields.slug}`} postTitle={edge.node.frontmatter.title}/>
         <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>Read</Link>
       </div>
