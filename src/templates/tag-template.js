@@ -59,6 +59,7 @@ export const query = graphql`
           fields {
             slug
             categorySlug
+            tagSlugs
           }
           frontmatter {
             title
@@ -66,6 +67,7 @@ export const query = graphql`
             category
             description
             image
+            tags
           }
         }
       }
