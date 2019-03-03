@@ -8,6 +8,7 @@ const Layout = ({
   <div className={styles.layout}>
     <Helmet>
       <title>{title}</title>
+      <html lang="en" />
       <meta name="description" content={description} />
       <meta name="og:image" content={image} />
     </Helmet>
