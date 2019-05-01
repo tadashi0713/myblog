@@ -16,7 +16,7 @@ export const PureAuthor = ({ data }) => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <strong>{author.name}</strong> on Linkedin
+          <strong>{author.name}</strong> on LinkedIn
         </a>
       </p>
     </div>
