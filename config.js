@@ -38,6 +38,7 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'Automation Engineer',
     contacts: {
+      linkedin: 'tadashi-nemoto',
       facebook: 'nemoto.tadashi',
       github: 'tadashi0713',
       rss: '/rss.xml',
