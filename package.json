@@ -82,7 +82,7 @@
     "react-dom": "^16.7.0",
     "react-google-recaptcha": "^1.0.5",
     "react-helmet": "^5.2.0",
-    "react-share": "^2.4.0"
+    "react-share": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",
