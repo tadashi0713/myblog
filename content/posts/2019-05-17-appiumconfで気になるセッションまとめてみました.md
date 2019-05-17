@@ -2,7 +2,7 @@
 template: post
 title: AppiumConfで気になるセッションまとめてみました
 slug: appiumconf_session
-draft: true
+draft: false
 date: 2019-05-17T01:19:48.932Z
 image: /media/スクリーンショット-2019-05-17-10.20.49.png
 description: >-
