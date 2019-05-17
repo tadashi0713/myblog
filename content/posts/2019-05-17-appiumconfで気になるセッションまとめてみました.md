@@ -18,6 +18,8 @@ tags:
 
 6月13~15にインドのバンガロールで行われるAppiumConfに参加する予定です。
 
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://appiumconf.com/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fappiumconf.com%2F&key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
+
 Appiumというモバイルテスト自動化のためのフレームワークを軸に、モバイルテスティングに関するセッションが行われる予定ですが、その中で私が気になるセッションをメモ程度にまとめてみました。
 
 
