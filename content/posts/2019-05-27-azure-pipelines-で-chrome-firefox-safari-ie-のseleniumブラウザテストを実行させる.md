@@ -8,12 +8,10 @@ image: /media/azure-pipelines-selenium.png
 description: >-
   Azure Pipelines では、Linux / macOS / Windows の VM を利用することができます。
 
-
   Selenium
   などのブラウザテストの場合、特定のOS上でしか動作できないブラウザ(Safari・IE・Edge)をテストする必要が出てくることもあります。
 
-
-  上記のようなブラウザテストと、3つのOSをサポートしている Azure Pipelines は相性が良いのではと考え、今回試してみることにしました。
+  それらのテストと Azure Pipelines は相性が良いのではと考え、今回試してみることにしました。
 category: Automation
 tags:
   - Japanese
@@ -35,7 +33,7 @@ tags:
 
 Selenium などのブラウザテストの場合、特定のOS上でしか動作できないブラウザ(Safari・IE・Edge)をテストする必要が出てくることもあります。
 
-上記のようなブラウザテストと、3つのOSをサポートしている Azure Pipelines は相性が良いのではと考え、今回試してみることにしました。
+それらのテストと Azure Pipelines は相性が良いのではと考え、今回試してみることにしました。
 
 サンプルコードは下記になります。今回は WebdriverIO で実装してみました。
 
