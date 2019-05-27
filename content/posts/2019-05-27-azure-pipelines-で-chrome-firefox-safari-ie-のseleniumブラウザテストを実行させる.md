@@ -8,8 +8,10 @@ image: /media/azure-pipelines-selenium.png
 description: >-
   Azure Pipelines では、Linux / macOS / Windows の VM を利用することができます。
 
+
   Selenium
   などのブラウザテストの場合、特定のOS上でしか動作できないブラウザ(Safari・IE・Edge)をテストする必要が出てくることもあります。
+
 
   上記のようなブラウザテストと、3つのOSをサポートしている Azure Pipelines は相性が良いのではと考え、今回試してみることにしました。
 category: Automation
@@ -74,13 +76,16 @@ config.capabilities = [{
 ```
 
 2つ目に、Selenium standalone server や、各種 driver は別途インストールする必要があります。
+
 ※ Windows VMの一部では IE Driver / Chrome Driver / Gecko Driver がインストールされています
 
 WebdriverIO の場合、@wdio/selenium-standalone-service を使うことによって、それらを自動でインストールしてくれるので便利です。
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://webdriver.io/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwebdriver.io%2Fdocs%2Fselenium-standalone-service.html&key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
 
-今回、Edge ブラウザのテストも試してみたかったのですがうまくできませんでした。Windows VM に別途設定・インストールが必要かもしれないので時間があるときに試してみたいと思います。
+今回、Edge ブラウザのテストも試してみたかったのですがうまくできませんでした。
+
+Windows VM に別途設定・インストールが必要かもしれないので時間があるときに試してみたいと思います。
 
 それを差し置いても、Selenium で使うための Windows や macOS のリソースを手軽に利用できるのはとても魅力的に感じました。
 
