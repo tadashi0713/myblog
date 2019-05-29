@@ -83,3 +83,13 @@ IEモードなど、Edge ならではの機能も追加されていく予定で�
 # HoloLens2 体験しました
 
 ![](/media/img_20190529_125216.jpg)
+
+偶然抽選に当選し、HoloLens 2 を体験することができました。
+
+HoloLens 2 がお目当てで de:code に参加されていた方も多くいらっしゃいましたが、私は全然そんなことはなく、ただ基調講演で関心が出てきた程度でした。
+
+体験した様子は偶然 Gizmodo さんに取材いただいたので、そちらをご覧ください。
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.gizmodo.jp/2019/05/hololens2-decode19.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.gizmodo.jp%2F2019%2F05%2Fhololens2-decode19.html&key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
+
+実際にトヨタ自動車が事例として紹介されていましたが、MR(Mixed Reality) は専門職の仕事(医療・建築・機械)ととても相性が良く、生産性・効率性を上げるためのツールとして広まるのではと感じました。
