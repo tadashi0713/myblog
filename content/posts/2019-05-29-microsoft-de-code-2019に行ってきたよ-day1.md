@@ -68,6 +68,10 @@ IEモードなど、Edge ならではの機能も追加されていく予定で�
 
 ![](/media/img_20190529_110203-1-.jpg)
 
+## GitHub と Azure Active Directoryとの同期サポート
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.publickey1.jp/blog/19/githubazuregithubazure_active_directorymicrosoft_build_2019.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.publickey1.jp%2Fblog%2F19%2Fgithubazuregithubazure_active_directorymicrosoft_build_2019.html&key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
+
 ## 仮想ノード on AKS(Virtual Kubelet)
 
 オープンソースの Virtual Kubelet をベースに、Kubernetes の Node を瞬時に増減させることができるというものです。
@@ -84,7 +88,7 @@ IEモードなど、Edge ならではの機能も追加されていく予定で�
 
 ![](/media/img_20190529_125216.jpg)
 
-偶然抽選に当選し、HoloLens 2 を体験することができました。
+抽選に当選し、HoloLens 2 を体験することができました。
 
 HoloLens 2 がお目当てで de:code に参加されていた方も多くいらっしゃいましたが、私は全然そんなことはなく、ただ基調講演で関心が出てきた程度でした。
 
