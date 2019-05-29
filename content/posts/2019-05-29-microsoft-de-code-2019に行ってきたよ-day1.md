@@ -2,7 +2,7 @@
 template: post
 title: 'Microsoft de:code 2019に行ってきたよ(Day1)'
 slug: azure_2019_day1
-draft: true
+draft: false
 date: 2019-05-29T10:42:54.834Z
 image: /media/img_20190529_125216.jpg
 description: |-
@@ -64,13 +64,13 @@ WSL の次期バージョン WSL2 では Docker が実行できることも話�
 
 IEモードなど、Edge ならではの機能も追加されていく予定です。
 
-## Visual Studio Code Online
+## Visual Studio Online
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://jp.techcrunch.com/2019/05/07/2019-05-06-microsoft-launches-visual-studio-online-an-online-code-editor/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fjp.techcrunch.com%2F2019%2F05%2F07%2F2019-05-06-microsoft-launches-visual-studio-online-an-online-code-editor%2F&amp;key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
 
 ![](/media/img_20190529_110203-1-.jpg)
 
-## GitHub と Azure Active Directoryとの同期サポート
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.publickey1.jp/blog/19/githubazuregithubazure_active_directorymicrosoft_build_2019.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.publickey1.jp%2Fblog%2F19%2Fgithubazuregithubazure_active_directorymicrosoft_build_2019.html&key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
+クラウド上で Visual Studio Code が提供されることによって、様々なプラットフォームでの開発や(スライドでもiPadで表示されています)それらの同期がスムーズにできるのではと期待しています。
 
 ## 仮想ノード on AKS(Virtual Kubelet)
 
