@@ -26,11 +26,15 @@ Build 2019 で発表されたものがメインになっていましたが、実
 
 パフォーマンスの高い Windows アプリを React Native で実装できるというものです。
 
+![](/media/img_20190529_102607.jpg)
+
 Javascript 開発者であればとても簡単に実装できるということをアピールしていました、今度簡単なものを作ってみようかなと思います。
 
 ## Windows Terminal
 
 1つのターミナルでタブごとに PowerShell、WSLなどに切り替えられて便利そうです。
+
+![](/media/img_20190529_103059-1-.jpg)
 
 Unicode対応で、絵文字・日本語も問題なく表示できます。
 
@@ -40,23 +44,32 @@ WSL の次期バージョン WSL2 では Docker が実行できることも話�
 
 デモンストレーションでは、VSCode on Linux でコーディングしながら Windows Edge on Windows で表示確認をしていました。
 
+![](/media/img_20190529_103353.jpg)
+
 また、パフォーマンスも WSL の数倍高いということでした(デモンストレーションでは npm installで比較していました)。
 
 ## Microsoft Edge
 
 最近 Microsoft Edge は Chronium ベースに移行していくことでも話題になりました。
 
+![](/media/img_20190529_104022.jpg)
+
 IEモードなど、Edge ならではの機能も追加されていく予定です。
 
 ## Visual Studio Code Online
 
+![](/media/img_20190529_110203-1-.jpg)
 
 ## 仮想ノード on AKS(Virtual Kubelet)
 
 オープンソースの Virtual Kubelet をベースに、Kubernetes の Node を瞬時に増減させることができるというものです。
+
+![](/media/img_20190529_112122.jpg)
 
 以前ブログにも書きましたが、Selenium などの自動テストととても相性が良いと思います。
 
 東日本リージョンで利用できるようになったら是非試してみたいです。
 
 # HoloLens2 体験しました
+
+![](/media/img_20190529_125216.jpg)
