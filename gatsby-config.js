@@ -1,6 +1,6 @@
 'use strict';
 
-const path = require(`path`)
+const path = require('path');
 
 const siteConfig = require('./config.js');
 const postCssPlugins = require('./postcss-config.js');
@@ -133,17 +133,17 @@ module.exports = {
             options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
           },
           {
-            resolve: `gatsby-source-filesystem`,
+            resolve: 'gatsby-source-filesystem',
             options: {
-              name: `images`,
-              path: path.join(__dirname, `static`, `media`),
+              name: 'images',
+              path: path.join(__dirname, 'static', 'media'),
             },
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
-          `gatsby-plugin-sharp`,
-          `gatsby-transformer-sharp`,
+          'gatsby-plugin-sharp',
+          'gatsby-transformer-sharp',
         ]
       }
     },

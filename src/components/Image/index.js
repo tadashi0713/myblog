@@ -1,12 +1,12 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 
 export default ({
-                  filename,
-                  alt,
-                }) => (
+  filename,
+  alt,
+}) => (
   <StaticQuery
     query={graphql`
       query {
@@ -27,15 +27,13 @@ export default ({
     `}
 
     render={(data) => {
-      const image = data.images.edges.find(n =>
-        n.node.relativePath.includes(filename)
-      )
+      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
 
       if (!image) {
-        return null
+        return null;
       }
 
-      const imageSizes = image.node.childImageSharp.sizes
+      const imageSizes = image.node.childImageSharp.sizes;
       return (
         <Img
           alt={alt}
@@ -44,4 +42,4 @@ export default ({
       );
     }}
   />
-)
+);
