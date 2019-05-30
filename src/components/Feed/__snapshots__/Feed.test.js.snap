@@ -43,9 +43,8 @@ exports[`Feed renders correctly 1`] = `
     <Link
       to="/test_0"
     >
-      <img
-        alt="test_0"
-        src="/media/test_0.png"
+      <StaticQuery
+        render={[Function]}
       />
     </Link>
     <p
@@ -330,9 +329,8 @@ exports[`Feed renders correctly 1`] = `
     <Link
       to="/test_1"
     >
-      <img
-        alt="test_1"
-        src="/media/test_1.png"
+      <StaticQuery
+        render={[Function]}
       />
     </Link>
     <p
