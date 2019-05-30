@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import styles from './Feed.module.scss';
 import SNSShare from '../SNSShare';
 import MiniTags from './MiniTags';
-import Image from '../Image';
+import Image from '../Image/index';
 
 const siteConfig = require('../../../config.js');
 
@@ -25,7 +25,7 @@ const Feed = ({ edges }) => (
           <Link className={styles['feed__item-title-link']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
         </h2>
         <Link to={edge.node.fields.slug}>
-          <Image filename={edge.node.frontmatter.image} />
+          <Image filename={edge.node.frontmatter.image} alt={edge.node.frontmatter.title} />
         </Link>
         <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>
         <MiniTags tags={edge.node.frontmatter.tags} tagSlugs={edge.node.fields.tagSlugs}/>
