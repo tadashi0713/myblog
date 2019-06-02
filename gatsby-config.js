@@ -126,7 +126,11 @@ module.exports = {
         plugins: [
           {
             resolve: 'gatsby-remark-images',
-            options: { maxWidth: 960 }
+            options: {
+              maxWidth: 800,
+              withWebp: true,
+              quality: 30
+            }
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
