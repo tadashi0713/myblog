@@ -17,7 +17,7 @@ export default ({
               name
               childImageSharp {
                 sizes(maxWidth: 800) {
-                  ...GatsbyImageSharpSizes
+                  ...GatsbyImageSharpSizes_withWebp
                 }
               }
             }
