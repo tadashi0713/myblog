@@ -4,6 +4,10 @@ title: Slides / スライド一覧
 slug: /pages/slides/
 draft: false
 ---
+## 2019
+
+<iframe id="talk_frame_480798" src="//speakerdeck.com/player/671416e974c145a090ffe6cc4eee9078" width="710" height="399" style="border:0; padding:0; margin-bottom:30px; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 ## 2018
 
 <iframe id="talk_frame_480798" src="//speakerdeck.com/player/edaba8cd3f6a45a78c65641346eaa4e0" width="710" height="399" style="border:0; padding:0; margin-bottom:30px; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
