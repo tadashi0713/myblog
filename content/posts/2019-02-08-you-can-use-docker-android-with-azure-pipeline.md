@@ -15,8 +15,6 @@ tags:
   - Appium
   - Docker
 ---
-![Running Appium with Azure pipeline](/media/スクリーンショット-2019-02-13-21.07.03.png "Running Appium with Azure pipeline")
-
 Last year, I wrote blog about Android・Appium test environment using [Docker-Android](https://github.com/budtmo/docker-android)
 
 <div><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Ftech.mercari.com%2Fentry%2F2018%2F12%2F28%2F175147" style="border: 0; width: 100%; height: 190px;" allowfullscreen scrolling="no" allow="autoplay; encrypted-media"></iframe></div>

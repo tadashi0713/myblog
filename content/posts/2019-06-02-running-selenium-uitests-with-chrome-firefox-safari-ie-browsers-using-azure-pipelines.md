@@ -19,8 +19,6 @@ tags:
   - Selenium
   - Azure
 ---
-![](/media/azure-pipelines-selenium.png)
-
 Microsoft`s Azure Pipelines was announced last year.
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://azure.microsoft.com/en-us/services/devops/pipelines/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fservices%2Fdevops%2Fpipelines%2F&key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
