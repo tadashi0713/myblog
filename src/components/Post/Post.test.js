@@ -18,7 +18,8 @@ describe('Post', () => {
           'test_0',
           'test_1'
         ],
-        title: 'test'
+        title: 'test',
+        image: '/media/test_0.png',
       }
     }
   };
