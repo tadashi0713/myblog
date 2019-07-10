@@ -5,7 +5,7 @@ slug: agile_automation_days_ja
 draft: false
 date: 2019-07-10T01:00:00.000Z
 image: /media/スクリーンショット-2019-07-08-16.45.38.png
-description: "10/28 ~ 29 にポーランドで行われる海外カンファレンス「Agile & Automation Days 2019」にスピーカーとして登壇する予定です。\t\n"
+description: "10/28 ~ 29 にポーランドで行われる海外カンファレンス「Agile & Automation Days 2019」にスピーカーとして登壇する予定です。\t\n主にソフトウェア開発の開発スピード・品質に関するセッションが行われる予定ですが、私はそこで「Creating parallelized Android UITest (Appium) environment using Azure, Docker and Android emulator」というタイトルで発表する予定です。"
 category: event
 tags:
   - Japanese
