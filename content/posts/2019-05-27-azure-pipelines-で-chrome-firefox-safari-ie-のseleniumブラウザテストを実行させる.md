@@ -19,6 +19,8 @@ tags:
   - Azure
   - WebdriverIO
 ---
+![](/media/azure-pipelines-selenium.png)
+
 去年発表されたマイクロソフトの CI/CDツール「Azure Pipelines」では、オープンソースプロジェクトの場合、無料・無制限で利用することができます。
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.publickey1.jp/blog/18/cicdazure_pipeline130.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.publickey1.jp%2Fblog%2F18%2Fcicdazure_pipeline130.html&key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
