@@ -23,7 +23,6 @@ describe('PostTemplate', () => {
           date: '2016-09-01',
           description: 'test',
           title: 'test',
-          image: '/media/test_0.png',
           tags: [
             'test_0',
             'test_1'

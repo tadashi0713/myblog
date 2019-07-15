@@ -14,6 +14,8 @@ tags:
   - Gatsby
   - Iframely
 ---
+![](/media/スクリーンショット-2019-02-28-18.51.28.png)
+
 As I wrote last post, this blog is created using Gatsby.
 
 Some blog services provide a feature embedding beautiful links with images.

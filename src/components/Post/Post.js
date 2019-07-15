@@ -15,8 +15,7 @@ const Post = ({ post }) => {
   const {
     tags,
     title,
-    date,
-    image
+    date
   } = post.frontmatter;
 
   const { html } = post;
@@ -30,7 +29,7 @@ const Post = ({ post }) => {
       <Link className={styles['post__home-button']} to="/">All Articles</Link>
 
       <div className={styles['post__content']}>
-        <Content body={html} title={title} image={image.replace('/media/', '')}/>
+        <Content body={html} title={title} />
       </div>
 
       <div className={styles['post__footer']}>

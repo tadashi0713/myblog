@@ -23,20 +23,12 @@ exports[`Post renders correctly 1`] = `
       </h1>
       <div
         className="content__body"
-      >
-        <p>
-          <StaticQuery
-            render={[Function]}
-          />
-        </p>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<p>test</p>",
-            }
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>test</p>",
           }
-        />
-      </div>
+        }
+      />
     </div>
   </div>
   <div

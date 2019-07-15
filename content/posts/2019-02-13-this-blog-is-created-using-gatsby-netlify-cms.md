@@ -13,6 +13,8 @@ tags:
   - Gatsby
   - Netlify
 ---
+![Netlify CMS admin page](/media/スクリーンショット-2019-02-18-17.24.59.png "Netlify CMS admin page")
+
 I was thinking of creating my own blog.
 
 Using Wordpress is good option, but I want another because I want to study Javascript in addition.
