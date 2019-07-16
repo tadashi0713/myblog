@@ -6,6 +6,8 @@ draft: false
 ---
 ## 2019
 
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0; margin-bottom:10px;"><a href="https://codezine.jp/article/detail/11600" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fcodezine.jp%2Farticle%2Fdetail%2F11600&key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
+
 <iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Ftech.mercari.com%2Fentry%2F2019%2F04%2F16%2F060000" style="border: 0; width: 100%; height: 190px;" allowfullscreen scrolling="no" allow="autoplay; encrypted-media"></iframe>
 
 <iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Ftech.mercari.com%2Fentry%2F2019%2F02%2F18%2F173236" style="border: 0; width: 100%; height: 190px;" allowfullscreen scrolling="no" allow="autoplay; encrypted-media"></iframe>
