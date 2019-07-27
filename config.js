@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://tadashi0713.com',
   title: 'Blog by Tadashi Nemoto',
-  subtitle: 'Automation Engineer',
+  subtitle: 'QA Automation Engineer / Software Engineer in Test',
   disqusShortname: 'https-tadashi0713-com',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-133659588-1',
@@ -36,7 +36,7 @@ module.exports = {
   author: {
     name: 'Tadashi Nemoto',
     photo: '/photo.jpg',
-    bio: 'Automation Engineer',
+    bio: 'QA Automation Engineer / Software Engineer in Test',
     contacts: {
       linkedin: 'tadashi-nemoto',
       facebook: 'nemoto.tadashi',
