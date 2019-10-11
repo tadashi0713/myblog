@@ -7,5 +7,11 @@ date: 2019-10-11T05:40:57.738Z
 image: /media/jenkinsday2019_top_br.jpg
 description: aa
 category: Event
+tags:
+  - Jenkins
+  - Japanese
+  - Continuous Integration
+  - Continuous Delivery
+  - Automation
 ---
 aa
