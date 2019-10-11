@@ -5,7 +5,13 @@ slug: jenkins_day_japan_2019_release_engineering
 draft: false
 date: 2019-10-11T05:40:57.738Z
 image: /media/jenkinsday2019_top_br.jpg
-description: aa
+description: >-
+  10/11(金)に行われた「Jenkins Day Japan 2019」に参加しました。
+
+
+  今回はその中のセッション「QAからリリースエンジニアリングへの進化 R＆D急成長の礎としてのCI/CD(The evolution from QA to
+  Release engineering and CI/CD as the anchor for R&D hyper
+  growth)」がとても興味深かったのでまとめてみました。
 category: Event
 tags:
   - Jenkins
@@ -14,9 +20,14 @@ tags:
   - Continuous Delivery
   - Automation
 ---
+![](/media/jenkinsday2019_top_br.jpg)
+<br />
+
+10/11(金)に行われた「Jenkins Day Japan 2019」に参加しました。
+
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://cloudbees.techmatrix.jp/jenkins-day-japan2019/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fcloudbees.techmatrix.jp%2Fjenkins-day-japan2019%2F&key=b9fe832f5332a1c3e40cbe51810e08d3"></a></div></div>
 
-「QAからリリースエンジニアリングへの進化 R＆D急成長の礎としてのCI/CD(The evolution from QA to Release engineering and CI/CD as the anchor for R&D hyper growth)」
+今回はその中のセッション「QAからリリースエンジニアリングへの進化 R＆D急成長の礎としてのCI/CD(The evolution from QA to Release engineering and CI/CD as the anchor for R&D hyper growth)」がとても興味深かったのでまとめてみました。
 
 ```
 【講演概要】
