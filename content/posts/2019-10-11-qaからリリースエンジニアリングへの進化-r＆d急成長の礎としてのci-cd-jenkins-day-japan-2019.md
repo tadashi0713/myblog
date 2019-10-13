@@ -21,6 +21,8 @@ tags:
   - Automation
 ---
 ![](/media/jenkinsday2019_top_br.jpg)
+
+
 <br />
 
 10/11(金)に行われた「Jenkins Day Japan 2019」に参加しました。
@@ -102,6 +104,18 @@ Avi Levi 氏はまず1人でQAを始め、後に3~4人のQA部隊になりまし
 ・本番環境でのカナリーテスティング
 ・継続的なモニタリング・フィードバック
 
+![](/media/screen-shot-2019-10-13-at-21.14.07.png)
+
 これによって開発スピードの向上が見え始め、実際にコミット数を増やすことができました。
 
 また、開発者がEnd to Endのプロダクトのオーナーシップを持つことで、モチベーションが上がるという効果も見え始めてきました。
+
+## まとめ
+
+まとめとして彼は5つの重要点(takeaways)を述べました
+
+1. Harness the Right Stakeholder(正しいステークホルダーを味方につける)
+2. Start Small and Lead by Example(小さく始めて手本にする)
+3. Honest Data Driven Discussions(データを元にした正直なディスカッションを行う)
+4. Enable Engineering Productivity and Collaboration(エンジニアの生産性とコラボレーションを実現する)
+5. Maintain Good Perception・Users Trust(信頼される良い人であること)
