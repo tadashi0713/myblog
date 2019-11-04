@@ -6,6 +6,8 @@ draft: false
 ---
 ## 2019
 
+<iframe id="talk_frame_480798" src="//speakerdeck.com/player/b39c847fb0e84047a74d0dee8f76b916" width="710" height="399" style="border:0; padding:0; margin-bottom:30px; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 <iframe id="talk_frame_480798" src="//speakerdeck.com/player/671416e974c145a090ffe6cc4eee9078" width="710" height="399" style="border:0; padding:0; margin-bottom:30px; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ## 2018
