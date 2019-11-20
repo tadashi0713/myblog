@@ -6,6 +6,8 @@ draft: false
 ---
 ## 2019
 
+<iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Ftech.mercari.com%2Fentry%2F2019%2F11%2F12%2F060000" style="border: 0; width: 100%; height: 190px;" allowfullscreen scrolling="no"></iframe>
+
 <iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Ftech.mercari.com%2Fentry%2F2019%2F09%2F09%2F113455" style="border: 0; width: 100%; height: 190px;" allowfullscreen scrolling="no"></iframe>
 
 <iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Ftech.mercari.com%2Fentry%2F2019%2F08%2F27%2F080000" style="border: 0; width: 100%; height: 190px;" allowfullscreen scrolling="no"></iframe>
