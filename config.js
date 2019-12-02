@@ -13,6 +13,10 @@ module.exports = {
       path: '/'
     },
     {
+      label: 'About',
+      path: '/about'
+    },
+    {
       label: 'Categories',
       path: '/categories'
     },
@@ -22,11 +26,11 @@ module.exports = {
     },
     {
       label: 'External Articles',
-      path: '/pages/external_articles'
+      path: '/external_articles'
     },
     {
       label: 'Slides',
-      path: '/pages/slides'
+      path: '/slides'
     },
     {
       label: 'Contact',
@@ -38,6 +42,7 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'QA Automation Engineer / Software Engineer in Test',
     contacts: {
+      email: 'tadashi.nemoto0713@gmail.com',
       linkedin: 'tadashi-nemoto',
       facebook: 'nemoto.tadashi',
       github: 'tadashi0713',

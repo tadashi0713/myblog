@@ -39,11 +39,12 @@ export const Sidebar = (props) => (
               photo
               bio
               contacts {
-                facebook
+                email
                 github
+                linkedin
+                facebook
                 rss
                 feedly
-                linkedin
               }
             }
           }
