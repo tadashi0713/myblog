@@ -38,6 +38,7 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'QA Automation Engineer / Software Engineer in Test',
     contacts: {
+      email: 'tadashi.nemoto0713@gmail.com',
       linkedin: 'tadashi-nemoto',
       facebook: 'nemoto.tadashi',
       github: 'tadashi0713',
