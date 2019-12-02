@@ -13,6 +13,10 @@ module.exports = {
       path: '/'
     },
     {
+      label: 'About',
+      path: '/about'
+    },
+    {
       label: 'Categories',
       path: '/categories'
     },
@@ -22,11 +26,11 @@ module.exports = {
     },
     {
       label: 'External Articles',
-      path: '/pages/external_articles'
+      path: '/external_articles'
     },
     {
       label: 'Slides',
-      path: '/pages/slides'
+      path: '/slides'
     },
     {
       label: 'Contact',
