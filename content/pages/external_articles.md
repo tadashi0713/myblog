@@ -1,7 +1,7 @@
 ---
 template: page
 title: External Articles / 公開した記事
-slug: /pages/external_articles/
+slug: external_articles
 draft: false
 ---
 ## 2019

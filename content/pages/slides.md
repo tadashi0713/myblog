@@ -1,7 +1,7 @@
 ---
 template: page
 title: Slides / スライド一覧
-slug: /pages/slides/
+slug: slides
 draft: false
 ---
 ## 2019
