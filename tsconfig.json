@@ -7,6 +7,9 @@
     "strict": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "typeRoots": ["src/types/"]
+    "typeRoots": ["src/types/"],
+    "types": [
+      "@types/jest"
+    ]
   }
 }
