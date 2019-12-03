@@ -25,6 +25,7 @@ module.exports = {
     author: siteConfig.author
   },
   plugins: [
+    'gatsby-plugin-typescript',
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
