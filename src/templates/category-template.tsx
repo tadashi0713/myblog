@@ -25,7 +25,7 @@ const CategoryTemplate = ({ data, pageContext }) => {
   const pageTitle = currentPage > 0 ? `${category} - Page ${currentPage} - ${siteTitle}` : `${category} - ${siteTitle}`;
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={siteSubtitle} image={''}>
       <Sidebar />
       <Page title={category}>
         <Feed edges={edges} />

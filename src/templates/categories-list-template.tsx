@@ -14,7 +14,7 @@ const CategoriesListTemplate = ({ data }) => {
   const { group } = data.allMarkdownRemark;
 
   return (
-    <Layout title={`Categories - ${title}`} description={subtitle}>
+    <Layout title={`Categories - ${title}`} description={subtitle} image={''}>
       <Sidebar />
       <Page title="Categories">
         <ul>
