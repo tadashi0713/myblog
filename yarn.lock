@@ -1797,7 +1797,7 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@typescript-eslint/eslint-plugin@^2.9.0":
+"@typescript-eslint/eslint-plugin@^2.10.0", "@typescript-eslint/eslint-plugin@^2.9.0":
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-2.10.0.tgz#c4cb103275e555e8a7e9b3d14c5951eb6d431e70"
   integrity sha512-rT51fNLW0u3fnDGnAHVC5nu+Das+y2CpW10yqvf6/j5xbuUV3FxA3mBaIbM24CXODXjbgUznNb4Kg9XZOUxKAw==
