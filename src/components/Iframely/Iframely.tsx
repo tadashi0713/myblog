@@ -3,7 +3,9 @@ import Helmet from 'react-helmet';
 
 export default class Iframely extends React.Component {
   componentDidMount() {
+    // @ts-ignore
     if (window.iframely) {
+      // @ts-ignore
       window.iframely.load();
     }
   }
