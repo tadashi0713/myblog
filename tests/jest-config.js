@@ -20,6 +20,7 @@ module.exports = {
   testURL: 'http://localhost/',
   moduleFileExtensions: [
     "ts",
-    "tsx"
+    "tsx",
+    "js"
   ]
 };
