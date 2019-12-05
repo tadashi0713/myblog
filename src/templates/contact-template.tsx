@@ -47,7 +47,7 @@ export default class ContactTemplate extends React.Component {
 
   render() {
     return (
-      <Layout title={`Contact - ${siteConfig.title}`} description={siteConfig.subtitle}>
+      <Layout title={`Contact - ${siteConfig.title}`} description={siteConfig.subtitle} image={''}>
         <link
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
