@@ -8,7 +8,8 @@ describe('Author', () => {
       name: 'test',
       photo: '/photo.jpg',
       bio: 'test'
-    }
+    },
+    isIndex: true
   };
 
   it('renders correctly', () => {
