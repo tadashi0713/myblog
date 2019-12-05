@@ -6,27 +6,28 @@ import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 
-const IndexTemplate = ({ data, pageContext }) => {
+const TagTemplate = ({ data, pageContext }) => {
   const {
     title: siteTitle,
     subtitle: siteSubtitle
   } = data.site.siteMetadata;
 
   const {
+    tag,
     currentPage,
-    hasNextPage,
-    hasPrevPage,
     prevPagePath,
-    nextPagePath
+    nextPagePath,
+    hasPrevPage,
+    hasNextPage
   } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
+  const pageTitle = currentPage > 0 ? `All Posts tagged as "${tag}" - Page ${currentPage} - ${siteTitle}` : `All Posts tagged as "${tag}" - ${siteTitle}`;
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={siteSubtitle} image={''}>
       <Sidebar />
-      <Page>
+      <Page title={tag}>
         <Feed edges={edges} />
         <Pagination
           prevPagePath={prevPagePath}
@@ -40,7 +41,7 @@ const IndexTemplate = ({ data, pageContext }) => {
 };
 
 export const query = graphql`
-  query IndexTemplate($postsLimit: Int!, $postsOffset: Int!) {
+  query TagPage($tag: String, $postsLimit: Int!, $postsOffset: Int!) {
     site {
       siteMetadata {
         title
@@ -50,7 +51,7 @@ export const query = graphql`
     allMarkdownRemark(
         limit: $postsLimit,
         skip: $postsOffset,
-        filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } },
+        filter: { frontmatter: { tags: { in: [$tag] }, template: { eq: "post" }, draft: { ne: true } } },
         sort: { order: DESC, fields: [frontmatter___date] }
       ){
       edges {
@@ -74,4 +75,4 @@ export const query = graphql`
   }
 `;
 
-export default IndexTemplate;
+export default TagTemplate;

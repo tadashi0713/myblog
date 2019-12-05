@@ -13,7 +13,7 @@ const TagsListTemplate = ({ data }) => {
   const { group } = data.allMarkdownRemark;
 
   return (
-    <Layout title={`Tags - ${title}`} description={subtitle}>
+    <Layout title={`Tags - ${title}`} description={subtitle} image={''}>
       <Sidebar />
       <Page title="Tags">
         <ul>

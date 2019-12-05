@@ -11,7 +11,7 @@ const ContactThanksTemplate = ({ data }) => {
   } = data.site.siteMetadata;
 
   return (
-    <Layout title={`Thanks  - ${title}`} description={subtitle}>
+    <Layout title={`Thanks  - ${title}`} description={subtitle} image={''}>
       <Sidebar />
       <Page title="Thank you!">
         <p>Thank you for your contact.<br />お問い合わせありがとうございます。</p>

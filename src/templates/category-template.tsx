@@ -6,28 +6,28 @@ import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 
-const TagTemplate = ({ data, pageContext }) => {
+const CategoryTemplate = ({ data, pageContext }) => {
   const {
     title: siteTitle,
     subtitle: siteSubtitle
   } = data.site.siteMetadata;
 
   const {
-    tag,
+    category,
     currentPage,
     prevPagePath,
     nextPagePath,
     hasPrevPage,
-    hasNextPage
+    hasNextPage,
   } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `All Posts tagged as "${tag}" - Page ${currentPage} - ${siteTitle}` : `All Posts tagged as "${tag}" - ${siteTitle}`;
+  const pageTitle = currentPage > 0 ? `${category} - Page ${currentPage} - ${siteTitle}` : `${category} - ${siteTitle}`;
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={siteSubtitle} image={''}>
       <Sidebar />
-      <Page title={tag}>
+      <Page title={category}>
         <Feed edges={edges} />
         <Pagination
           prevPagePath={prevPagePath}
@@ -41,7 +41,7 @@ const TagTemplate = ({ data, pageContext }) => {
 };
 
 export const query = graphql`
-  query TagPage($tag: String, $postsLimit: Int!, $postsOffset: Int!) {
+  query CategoryPage($category: String, $postsLimit: Int!, $postsOffset: Int!) {
     site {
       siteMetadata {
         title
@@ -51,21 +51,21 @@ export const query = graphql`
     allMarkdownRemark(
         limit: $postsLimit,
         skip: $postsOffset,
-        filter: { frontmatter: { tags: { in: [$tag] }, template: { eq: "post" }, draft: { ne: true } } },
+        filter: { frontmatter: { category: { eq: $category }, template: { eq: "post" }, draft: { ne: true } } },
         sort: { order: DESC, fields: [frontmatter___date] }
       ){
       edges {
         node {
           fields {
-            slug
             categorySlug
+            slug
             tagSlugs
           }
           frontmatter {
-            title
             date
-            category
             description
+            category
+            title
             image
             tags
           }
@@ -75,4 +75,4 @@ export const query = graphql`
   }
 `;
 
-export default TagTemplate;
+export default CategoryTemplate;

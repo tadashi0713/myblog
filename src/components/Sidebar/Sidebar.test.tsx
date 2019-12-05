@@ -34,7 +34,8 @@ describe('Sidebar', () => {
             ]
           }
         }
-      }
+      },
+      isIndex: true
     };
 
     const tree = renderer.create(<Sidebar {...props} />).toJSON();

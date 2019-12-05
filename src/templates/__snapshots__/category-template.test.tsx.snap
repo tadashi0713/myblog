@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TagTemplate renders correctly 1`] = `
+exports[`CategoryTemplate renders correctly 1`] = `
 <div
   className="layout"
 >
@@ -280,7 +280,7 @@ exports[`TagTemplate renders correctly 1`] = `
                   aria-label="share_pocket"
                   className="pocket_icon_link"
                   href="https://getpocket.com/edit?url=https://tadashi0713.com//test_0&title=test_0"
-                  onClick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"
+                  onClick={[Function]}
                 >
                   <svg
                     aria-hidden="true"
@@ -566,7 +566,7 @@ exports[`TagTemplate renders correctly 1`] = `
                   aria-label="share_pocket"
                   className="pocket_icon_link"
                   href="https://getpocket.com/edit?url=https://tadashi0713.com//test_1&title=test_1"
-                  onClick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"
+                  onClick={[Function]}
                 >
                   <svg
                     aria-hidden="true"

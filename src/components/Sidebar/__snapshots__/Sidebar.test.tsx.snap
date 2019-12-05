@@ -21,7 +21,7 @@ exports[`Sidebar renders correctly 1`] = `
           width="75"
         />
       </Link>
-      <h2
+      <h1
         className="author__title"
       >
         <Link
@@ -30,7 +30,7 @@ exports[`Sidebar renders correctly 1`] = `
         >
           name
         </Link>
-      </h2>
+      </h1>
       <p
         className="author__subtitle"
       >

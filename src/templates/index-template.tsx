@@ -6,28 +6,27 @@ import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 
-const CategoryTemplate = ({ data, pageContext }) => {
+const IndexTemplate = ({ data, pageContext }) => {
   const {
     title: siteTitle,
     subtitle: siteSubtitle
   } = data.site.siteMetadata;
 
   const {
-    category,
     currentPage,
-    prevPagePath,
-    nextPagePath,
-    hasPrevPage,
     hasNextPage,
+    hasPrevPage,
+    prevPagePath,
+    nextPagePath
   } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `${category} - Page ${currentPage} - ${siteTitle}` : `${category} - ${siteTitle}`;
+  const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={siteSubtitle} image={''}>
       <Sidebar />
-      <Page title={category}>
+      <Page title={pageTitle}>
         <Feed edges={edges} />
         <Pagination
           prevPagePath={prevPagePath}
@@ -41,7 +40,7 @@ const CategoryTemplate = ({ data, pageContext }) => {
 };
 
 export const query = graphql`
-  query CategoryPage($category: String, $postsLimit: Int!, $postsOffset: Int!) {
+  query IndexTemplate($postsLimit: Int!, $postsOffset: Int!) {
     site {
       siteMetadata {
         title
@@ -51,21 +50,21 @@ export const query = graphql`
     allMarkdownRemark(
         limit: $postsLimit,
         skip: $postsOffset,
-        filter: { frontmatter: { category: { eq: $category }, template: { eq: "post" }, draft: { ne: true } } },
+        filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } },
         sort: { order: DESC, fields: [frontmatter___date] }
       ){
       edges {
         node {
           fields {
-            categorySlug
             slug
+            categorySlug
             tagSlugs
           }
           frontmatter {
-            date
-            description
-            category
             title
+            date
+            category
+            description
             image
             tags
           }
@@ -75,4 +74,4 @@ export const query = graphql`
   }
 `;
 
-export default CategoryTemplate;
+export default IndexTemplate;

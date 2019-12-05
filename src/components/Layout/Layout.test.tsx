@@ -6,7 +6,8 @@ describe('Layout', () => {
   const props = {
     children: 'test',
     description: 'test',
-    title: 'test'
+    title: 'test',
+    image: 'sample.json'
   };
 
   it('renders correctly', () => {

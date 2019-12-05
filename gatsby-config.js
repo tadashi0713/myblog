@@ -25,6 +25,7 @@ module.exports = {
     author: siteConfig.author
   },
   plugins: [
+    'gatsby-plugin-typescript',
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
@@ -157,7 +158,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
+        modulePath: `${__dirname}/src/cms/cms.ts`,
       }
     },
     {

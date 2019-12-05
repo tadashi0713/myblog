@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CategoryTemplate renders correctly 1`] = `
+exports[`IndexTemplate renders correctly 1`] = `
 <div
   className="layout"
 >
@@ -16,7 +16,7 @@ exports[`CategoryTemplate renders correctly 1`] = `
       <h1
         className="page__title"
       >
-        test
+        Posts - Page 1 - test
       </h1>
       <div
         className="page__body"
@@ -44,9 +44,9 @@ exports[`CategoryTemplate renders correctly 1`] = `
               >
                 <Link
                   className="feed__item-meta-category-link"
-                  to="/test"
+                  to="/test_0"
                 >
-                  test
+                  test_0
                 </Link>
               </span>
             </div>
@@ -280,7 +280,7 @@ exports[`CategoryTemplate renders correctly 1`] = `
                   aria-label="share_pocket"
                   className="pocket_icon_link"
                   href="https://getpocket.com/edit?url=https://tadashi0713.com//test_0&title=test_0"
-                  onClick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"
+                  onClick={[Function]}
                 >
                   <svg
                     aria-hidden="true"
@@ -330,9 +330,9 @@ exports[`CategoryTemplate renders correctly 1`] = `
               >
                 <Link
                   className="feed__item-meta-category-link"
-                  to="/test"
+                  to="/test_1"
                 >
-                  test
+                  test_1
                 </Link>
               </span>
             </div>
@@ -566,7 +566,7 @@ exports[`CategoryTemplate renders correctly 1`] = `
                   aria-label="share_pocket"
                   className="pocket_icon_link"
                   href="https://getpocket.com/edit?url=https://tadashi0713.com//test_1&title=test_1"
-                  onClick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"
+                  onClick={[Function]}
                 >
                   <svg
                     aria-hidden="true"

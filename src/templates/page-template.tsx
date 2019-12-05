@@ -20,7 +20,7 @@ const PageTemplate = ({ data }) => {
   const metaDescription = pageDescription !== null ? pageDescription : siteSubtitle;
 
   return (
-    <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription}>
+    <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} image={''}>
       <Sidebar />
       <Page title={pageTitle}>
         <div dangerouslySetInnerHTML={{ __html: pageBody }} />
