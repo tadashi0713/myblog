@@ -17,7 +17,7 @@ import styles from './SNSShare.module.scss';
 const SNSShare = ({ postUrl, postTitle }) => (
   <ul className={styles.content}>
     <Helmet>
-      <script type="text/javascript" src="//widgets.getpocket.com/v1/j/btn.js?v=1" charSet="utf-8" async="async"/>
+      <script type="text/javascript" src="//widgets.getpocket.com/v1/j/btn.js?v=1" charSet="utf-8" async={true}/>
     </Helmet>
     <li className={styles.share_button}>
       <FacebookShareButton additionalProps={{ 'aria-label': 'share_facebook' }} url={postUrl}>
