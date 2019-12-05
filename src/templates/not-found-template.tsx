@@ -11,7 +11,7 @@ const NotFoundTemplate = ({ data }) => {
   } = data.site.siteMetadata;
 
   return (
-    <Layout title={`Not Found - ${title}`} description={subtitle}>
+    <Layout title={`Not Found - ${title}`} description={subtitle} image={''}>
       <Sidebar />
       <Page title="NOT FOUND">
         <p>You just hit a route that doesn&#39;t exist... the sadness.</p>

@@ -24,9 +24,9 @@ const IndexTemplate = ({ data, pageContext }) => {
   const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={siteSubtitle} image={''}>
       <Sidebar />
-      <Page>
+      <Page title={pageTitle}>
         <Feed edges={edges} />
         <Pagination
           prevPagePath={prevPagePath}
