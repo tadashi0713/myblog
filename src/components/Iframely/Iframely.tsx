@@ -13,7 +13,7 @@ export default class Iframely extends React.Component {
   render() {
     return (
       <Helmet>
-        <script type="text/javascript" src="https://cdn.iframe.ly/embed.js"/>
+        <script type="text/javascript" src="https://cdn.iframe.ly/embed.js" />
       </Helmet>
     );
   }

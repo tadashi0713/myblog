@@ -19,7 +19,7 @@ describe('Sidebar', () => {
                 github: '#',
                 rss: '#',
                 telegram: '#',
-                linkedin: '#',
+                linkedin: '#'
               }
             },
             menu: [
