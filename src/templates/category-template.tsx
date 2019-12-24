@@ -1,10 +1,10 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import Sidebar from '../components/Sidebar';
-import Feed from '../components/Feed';
-import Page from '../components/Page';
-import Pagination from '../components/Pagination';
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Sidebar from "../components/Sidebar";
+import Feed from "../components/Feed";
+import Page from "../components/Page";
+import Pagination from "../components/Pagination";
 
 const CategoryTemplate = ({ data, pageContext }) => {
   const { title: siteTitle, subtitle: siteSubtitle } = data.site.siteMetadata;
@@ -25,7 +25,7 @@ const CategoryTemplate = ({ data, pageContext }) => {
       : `${category} - ${siteTitle}`;
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle} image={''}>
+    <Layout title={pageTitle} description={siteSubtitle} image={""}>
       <Sidebar />
       <Page title={category}>
         <Feed edges={edges} />

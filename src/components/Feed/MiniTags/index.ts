@@ -1,1 +1,1 @@
-export { default } from './MiniTags';
+export { default } from "./MiniTags";

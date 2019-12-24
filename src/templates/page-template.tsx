@@ -1,8 +1,8 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import Sidebar from '../components/Sidebar';
-import Page from '../components/Page';
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Sidebar from "../components/Sidebar";
+import Page from "../components/Page";
 
 const PageTemplate = ({ data }) => {
   const { title: siteTitle, subtitle: siteSubtitle } = data.site.siteMetadata;
@@ -21,7 +21,7 @@ const PageTemplate = ({ data }) => {
     <Layout
       title={`${pageTitle} - ${siteTitle}`}
       description={metaDescription}
-      image={''}
+      image={""}
     >
       <Sidebar />
       <Page title={pageTitle}>

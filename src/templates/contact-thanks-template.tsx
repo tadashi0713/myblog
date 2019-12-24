@@ -1,14 +1,14 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Sidebar from '../components/Sidebar';
-import Layout from '../components/Layout';
-import Page from '../components/Page';
+import React from "react";
+import { graphql } from "gatsby";
+import Sidebar from "../components/Sidebar";
+import Layout from "../components/Layout";
+import Page from "../components/Page";
 
 const ContactThanksTemplate = ({ data }) => {
   const { title, subtitle } = data.site.siteMetadata;
 
   return (
-    <Layout title={`Thanks  - ${title}`} description={subtitle} image={''}>
+    <Layout title={`Thanks  - ${title}`} description={subtitle} image={""}>
       <Sidebar />
       <Page title="Thank you!">
         <p>

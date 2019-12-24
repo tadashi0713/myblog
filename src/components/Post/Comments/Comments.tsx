@@ -1,6 +1,6 @@
-import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
-import ReactDisqusComments from 'react-disqus-comments';
+import React from "react";
+import { graphql, StaticQuery } from "gatsby";
+import ReactDisqusComments from "react-disqus-comments";
 
 export const PureComments = ({ data, postTitle, postSlug }) => {
   const { url, disqusShortname } = data.site.siteMetadata;
@@ -19,7 +19,7 @@ export const PureComments = ({ data, postTitle, postSlug }) => {
   );
 };
 
-export const Comments = (props) => (
+export const Comments = props => (
   <StaticQuery
     query={graphql`
       query CommentsQuery {
@@ -31,7 +31,7 @@ export const Comments = (props) => (
         }
       }
     `}
-    render={(data) => <PureComments {...props} data={data} />}
+    render={data => <PureComments {...props} data={data} />}
   />
 );
 

@@ -1,37 +1,37 @@
-import React from 'react';
-import moment from 'moment';
-import { Link } from 'gatsby';
-import styles from './Feed.module.scss';
-import SNSShare from '../SNSShare';
-import MiniTags from './MiniTags';
-import Image from '../Image/index';
+import React from "react";
+import moment from "moment";
+import { Link } from "gatsby";
+import styles from "./Feed.module.scss";
+import SNSShare from "../SNSShare";
+import MiniTags from "./MiniTags";
+import Image from "../Image/index";
 
-const siteConfig = require('../../../config.js');
+const siteConfig = require("../../../config.js");
 
 const Feed = ({ edges }) => (
-  <div className={styles['feed']}>
-    {edges.map((edge) => (
-      <div className={styles['feed__item']} key={edge.node.fields.slug}>
-        <div className={styles['feed__item-meta']}>
+  <div className={styles.feed}>
+    {edges.map(edge => (
+      <div className={styles.feed__item} key={edge.node.fields.slug}>
+        <div className={styles["feed__item-meta"]}>
           <time
-            className={styles['feed__item-meta-time']}
-            dateTime={moment(edge.node.frontmatter.date).format('MMMM D, YYYY')}
+            className={styles["feed__item-meta-time"]}
+            dateTime={moment(edge.node.frontmatter.date).format("MMMM D, YYYY")}
           >
-            {moment(edge.node.frontmatter.date).format('MMMM YYYY')}
+            {moment(edge.node.frontmatter.date).format("MMMM YYYY")}
           </time>
-          <span className={styles['feed__item-meta-divider']} />
-          <span className={styles['feed__item-meta-category']}>
+          <span className={styles["feed__item-meta-divider"]} />
+          <span className={styles["feed__item-meta-category"]}>
             <Link
               to={edge.node.fields.categorySlug}
-              className={styles['feed__item-meta-category-link']}
+              className={styles["feed__item-meta-category-link"]}
             >
               {edge.node.frontmatter.category}
             </Link>
           </span>
         </div>
-        <h2 className={styles['feed__item-title']}>
+        <h2 className={styles["feed__item-title"]}>
           <Link
-            className={styles['feed__item-title-link']}
+            className={styles["feed__item-title-link"]}
             to={edge.node.fields.slug}
           >
             {edge.node.frontmatter.title}
@@ -39,11 +39,11 @@ const Feed = ({ edges }) => (
         </h2>
         <Link to={edge.node.fields.slug}>
           <Image
-            filename={edge.node.frontmatter.image.replace('/media/', '')}
+            filename={edge.node.frontmatter.image.replace("/media/", "")}
             alt={edge.node.frontmatter.title}
           />
         </Link>
-        <p className={styles['feed__item-description']}>
+        <p className={styles["feed__item-description"]}>
           {edge.node.frontmatter.description}
         </p>
         <MiniTags
@@ -55,7 +55,7 @@ const Feed = ({ edges }) => (
           postTitle={edge.node.frontmatter.title}
         />
         <Link
-          className={styles['feed__item-readmore']}
+          className={styles["feed__item-readmore"]}
           to={edge.node.fields.slug}
         >
           Read

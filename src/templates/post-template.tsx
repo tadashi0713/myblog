@@ -1,7 +1,7 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import Post from '../components/Post';
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Post from "../components/Post";
 
 const PostTemplate = ({ data }) => {
   const { title: siteTitle, subtitle: siteSubtitle } = data.site.siteMetadata;

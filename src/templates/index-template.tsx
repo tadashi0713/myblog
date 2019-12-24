@@ -1,10 +1,10 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import Sidebar from '../components/Sidebar';
-import Feed from '../components/Feed';
-import Page from '../components/Page';
-import Pagination from '../components/Pagination';
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Sidebar from "../components/Sidebar";
+import Feed from "../components/Feed";
+import Page from "../components/Page";
+import Pagination from "../components/Pagination";
 
 const IndexTemplate = ({ data, pageContext }) => {
   const { title: siteTitle, subtitle: siteSubtitle } = data.site.siteMetadata;
@@ -22,7 +22,7 @@ const IndexTemplate = ({ data, pageContext }) => {
     currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle} image={''}>
+    <Layout title={pageTitle} description={siteSubtitle} image={""}>
       <Sidebar />
       <Page title={pageTitle}>
         <Feed edges={edges} />

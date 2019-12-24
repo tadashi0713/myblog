@@ -1,1 +1,1 @@
-export { default } from './SNSShare';
+export { default } from "./SNSShare";

@@ -1,14 +1,14 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import SNSShare from './SNSShare';
+import React from "react";
+import renderer from "react-test-renderer";
+import SNSShare from "./SNSShare";
 
-describe('SNSShare', () => {
+describe("SNSShare", () => {
   const props = {
-    postTitle: 'Sample',
-    postUrl: 'https://tadashi0713.com/sample'
+    postTitle: "Sample",
+    postUrl: "https://tadashi0713.com/sample"
   };
 
-  it('renders correctly', () => {
+  it("renders correctly", () => {
     const tree = renderer.create(<SNSShare {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });

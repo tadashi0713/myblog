@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const PagePreview = ({ entry, widgetFor }) => {
-  const body = widgetFor('body');
-  const title = entry.getIn(['data', 'title']);
+  const body = widgetFor("body");
+  const title = entry.getIn(["data", "title"]);
 
   return (
     <div className="page">
