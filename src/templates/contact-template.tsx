@@ -6,7 +6,7 @@ import Sidebar from "../components/Sidebar";
 import Layout from "../components/Layout";
 import Page from "../components/Page";
 
-const siteConfig = require("../../config");
+import siteConfig = require("../../config");
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
@@ -102,7 +102,6 @@ export default class ContactTemplate extends React.Component {
               />
             </Form.Group>
             <Recaptcha
-              ref="recaptcha"
               sitekey={RECAPTCHA_KEY}
               onChange={this.handleRecaptcha}
             />

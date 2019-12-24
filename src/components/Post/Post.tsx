@@ -9,7 +9,7 @@ import SNSShare from "../SNSShare";
 import styles from "./Post.module.scss";
 import Iframely from "../Iframely";
 
-const siteConfig = require("../../../config.js");
+import siteConfig = require("../../../config.js");
 
 const Post = ({ post }) => {
   const { tags, title, date } = post.frontmatter;

@@ -6,7 +6,7 @@ import SNSShare from "../SNSShare";
 import MiniTags from "./MiniTags";
 import Image from "../Image/index";
 
-const siteConfig = require("../../../config.js");
+import siteConfig = require("../../../config.js");
 
 const Feed = ({ edges }) => (
   <div className={styles.feed}>
