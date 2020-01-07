@@ -1,19 +1,18 @@
-import React from 'react';
-import { navigate } from 'gatsby-link';
-import { Button, Form } from 'react-bootstrap';
-import Recaptcha from 'react-google-recaptcha';
-import Sidebar from '../components/Sidebar';
-import Layout from '../components/Layout';
-import Page from '../components/Page';
-
-const siteConfig = require('../../config');
+import React from "react";
+import { navigate } from "gatsby-link";
+import { Button, Form } from "react-bootstrap";
+import Recaptcha from "react-google-recaptcha";
+import Sidebar from "../components/Sidebar";
+import Layout from "../components/Layout";
+import Page from "../components/Page";
+import siteConfig from "../../config";
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
 function encode(data) {
   return Object.keys(data)
-    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-    .join('&');
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join("&");
 }
 
 export default class ContactTemplate extends React.Component {
@@ -22,32 +21,36 @@ export default class ContactTemplate extends React.Component {
     this.state = {};
   }
 
-  handleChange = (e) => {
+  handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  handleRecaptcha = (value) => {
-    this.setState({ 'g-recaptcha-response': value });
+  handleRecaptcha = value => {
+    this.setState({ "g-recaptcha-response": value });
   };
 
-  handleSubmit = (e) => {
+  handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        'form-name': form.getAttribute('name'),
+        "form-name": form.getAttribute("name"),
         ...this.state
       })
     })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch((error) => alert(error));
+      .then(() => navigate(form.getAttribute("action")))
+      .catch(error => alert(error));
   };
 
   render() {
     return (
-      <Layout title={`Contact - ${siteConfig.title}`} description={siteConfig.subtitle} image={''}>
+      <Layout
+        title={`Contact - ${siteConfig.title}`}
+        description={siteConfig.subtitle}
+        image={""}
+      >
         <link
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -66,11 +69,8 @@ export default class ContactTemplate extends React.Component {
             onSubmit={this.handleSubmit}
           >
             <Form.Group hidden>
-              <Form.Label>Don’t fill this out:{' '}</Form.Label>
-              <Form.Control
-                name="bot-field"
-                onChange={this.handleChange}
-              />
+              <Form.Label>Don’t fill this out: </Form.Label>
+              <Form.Control name="bot-field" onChange={this.handleChange} />
             </Form.Group>
             <Form.Group>
               <Form.Label>Your name / お名前</Form.Label>
@@ -101,7 +101,6 @@ export default class ContactTemplate extends React.Component {
               />
             </Form.Group>
             <Recaptcha
-              ref="recaptcha"
               sitekey={RECAPTCHA_KEY}
               onChange={this.handleRecaptcha}
             />

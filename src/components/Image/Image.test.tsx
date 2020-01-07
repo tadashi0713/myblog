@@ -1,17 +1,15 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Icon from "./Icon";
+import Image from "./Image";
 
-describe("Icon", () => {
+describe("Image", () => {
   const props = {
-    icon: {
-      viewBox: "0 0 0 0",
-      path: ""
-    }
+    filename: "sample.jpg",
+    alt: "sample"
   };
 
   it("renders correctly", () => {
-    const tree = renderer.create(<Icon {...props} />).toJSON();
+    const tree = renderer.create(<Image {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

@@ -1,1 +1,1 @@
-export { default } from './Iframely';
+export { default } from "./Iframely";

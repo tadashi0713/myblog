@@ -1,24 +1,21 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import kebabCase from 'lodash/kebabCase';
-import Sidebar from '../components/Sidebar';
-import Layout from '../components/Layout';
-import Page from '../components/Page';
+import React from "react";
+import { Link, graphql } from "gatsby";
+import kebabCase from "lodash/kebabCase";
+import Sidebar from "../components/Sidebar";
+import Layout from "../components/Layout";
+import Page from "../components/Page";
 
 const CategoriesListTemplate = ({ data }) => {
-  const {
-    title,
-    subtitle
-  } = data.site.siteMetadata;
+  const { title, subtitle } = data.site.siteMetadata;
 
   const { group } = data.allMarkdownRemark;
 
   return (
-    <Layout title={`Categories - ${title}`} description={subtitle} image={''}>
+    <Layout title={`Categories - ${title}`} description={subtitle} image={""}>
       <Sidebar />
       <Page title="Categories">
         <ul>
-          {group.map((category) => (
+          {group.map(category => (
             <li key={category.fieldValue}>
               <Link to={`/category/${kebabCase(category.fieldValue)}/`}>
                 {category.fieldValue} ({category.totalCount})
