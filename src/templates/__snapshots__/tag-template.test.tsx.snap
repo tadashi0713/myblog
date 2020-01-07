@@ -279,7 +279,7 @@ exports[`TagTemplate renders correctly 1`] = `
                   aria-label="share_hatena-bookmark"
                   className="hatena-bookmark-button"
                   data-hatena-bookmark-layout="touch-counter"
-                  href="https://tadashi0713.com//test_0"
+                  href="https://b.hatena.ne.jp/entry/s/tadashi0713.com//test_0"
                   style={
                     Object {
                       "boxShadow": "none",
@@ -563,7 +563,7 @@ exports[`TagTemplate renders correctly 1`] = `
                   aria-label="share_hatena-bookmark"
                   className="hatena-bookmark-button"
                   data-hatena-bookmark-layout="touch-counter"
-                  href="https://tadashi0713.com//test_1"
+                  href="https://b.hatena.ne.jp/entry/s/tadashi0713.com//test_1"
                   style={
                     Object {
                       "boxShadow": "none",

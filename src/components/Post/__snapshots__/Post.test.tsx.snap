@@ -223,7 +223,7 @@ exports[`Post renders correctly 1`] = `
           aria-label="share_hatena-bookmark"
           className="hatena-bookmark-button"
           data-hatena-bookmark-layout="touch-counter"
-          href="https://tadashi0713.com/undefined"
+          href="https://b.hatena.ne.jp/entry/s/tadashi0713.com/undefined"
           style={
             Object {
               "boxShadow": "none",

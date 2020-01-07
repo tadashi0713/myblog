@@ -73,7 +73,9 @@ const SNSShare = ({ postUrl, postTitle }) => (
     <li className={styles.share_button}>
       <a
         aria-label="share_hatena-bookmark"
-        href={postUrl}
+        href={
+          "https://b.hatena.ne.jp/entry/s/" + postUrl.replace("https://", "")
+        }
         className="hatena-bookmark-button"
         data-hatena-bookmark-layout="touch-counter"
         title="このエントリーをはてなブックマークに追加"
