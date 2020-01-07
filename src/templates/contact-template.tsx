@@ -5,8 +5,7 @@ import Recaptcha from "react-google-recaptcha";
 import Sidebar from "../components/Sidebar";
 import Layout from "../components/Layout";
 import Page from "../components/Page";
-
-import siteConfig = require("../../config");
+import siteConfig from "../../config";
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 

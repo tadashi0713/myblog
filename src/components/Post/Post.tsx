@@ -8,8 +8,7 @@ import Tags from "./Tags";
 import SNSShare from "../SNSShare";
 import styles from "./Post.module.scss";
 import Iframely from "../Iframely";
-
-import siteConfig = require("../../../config.js");
+import siteConfig from "../../../config.js";
 
 const Post = ({ post }) => {
   const { tags, title, date } = post.frontmatter;
