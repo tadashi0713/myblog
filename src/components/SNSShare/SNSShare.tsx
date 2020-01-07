@@ -26,7 +26,7 @@ const SNSShare = ({ postUrl, postTitle }) => (
     </Helmet>
     <li className={styles.share_button}>
       <FacebookShareButton
-        additionalProps={{ "aria-label": "share_facebook" }}
+        // additionalProps={{ "aria-label": "share_facebook" }}
         url={postUrl}
       >
         <FacebookIcon size={32} round />
@@ -34,7 +34,7 @@ const SNSShare = ({ postUrl, postTitle }) => (
     </li>
     <li className={styles.share_button}>
       <TwitterShareButton
-        additionalProps={{ "aria-label": "share_twitter" }}
+        // additionalProps={{ "aria-label": "share_twitter" }}
         title={postTitle}
         url={postUrl}
       >
@@ -43,7 +43,7 @@ const SNSShare = ({ postUrl, postTitle }) => (
     </li>
     <li className={styles.share_button}>
       <LinkedinShareButton
-        additionalProps={{ "aria-label": "share_linkedin" }}
+        // additionalProps={{ "aria-label": "share_linkedin" }}
         url={postUrl}
       >
         <LinkedinIcon size={32} round />
@@ -51,7 +51,7 @@ const SNSShare = ({ postUrl, postTitle }) => (
     </li>
     <li className={styles.share_button}>
       <LineShareButton
-        additionalProps={{ "aria-label": "share_line" }}
+        // additionalProps={{ "aria-label": "share_line" }}
         title={postTitle}
         url={postUrl}
       >
