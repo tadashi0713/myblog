@@ -23,38 +23,30 @@ const SNSShare = ({ postUrl, postTitle }) => (
         charSet="utf-8"
         async={true}
       />
+      <script
+        type="text/javascript"
+        src="//b.st-hatena.com/js/bookmark_button.js"
+        charSet="utf-8"
+        async={true}
+      />
     </Helmet>
     <li className={styles.share_button}>
-      <FacebookShareButton
-        // additionalProps={{ "aria-label": "share_facebook" }}
-        url={postUrl}
-      >
+      <FacebookShareButton url={postUrl}>
         <FacebookIcon size={32} round />
       </FacebookShareButton>
     </li>
     <li className={styles.share_button}>
-      <TwitterShareButton
-        // additionalProps={{ "aria-label": "share_twitter" }}
-        title={postTitle}
-        url={postUrl}
-      >
+      <TwitterShareButton title={postTitle} url={postUrl}>
         <TwitterIcon size={32} round />
       </TwitterShareButton>
     </li>
     <li className={styles.share_button}>
-      <LinkedinShareButton
-        // additionalProps={{ "aria-label": "share_linkedin" }}
-        url={postUrl}
-      >
+      <LinkedinShareButton url={postUrl}>
         <LinkedinIcon size={32} round />
       </LinkedinShareButton>
     </li>
     <li className={styles.share_button}>
-      <LineShareButton
-        // additionalProps={{ "aria-label": "share_line" }}
-        title={postTitle}
-        url={postUrl}
-      >
+      <LineShareButton title={postTitle} url={postUrl}>
         <LineIcon size={32} round />
       </LineShareButton>
     </li>
@@ -75,6 +67,26 @@ const SNSShare = ({ postUrl, postTitle }) => (
           color="#fff"
           className={styles.pocket_icon}
           icon={faGetPocket}
+        />
+      </a>
+    </li>
+    <li className={styles.share_button}>
+      <a
+        aria-label="share_hatena-bookmark"
+        href={
+          "https://b.hatena.ne.jp/entry/s/" + postUrl.replace("https://", "")
+        }
+        className="hatena-bookmark-button"
+        data-hatena-bookmark-layout="touch-counter"
+        title="このエントリーをはてなブックマークに追加"
+        style={{ boxShadow: "none" }}
+      >
+        <img
+          src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
+          alt="このエントリーをはてなブックマークに追加"
+          width="20"
+          height="20"
+          style={{ border: "none" }}
         />
       </a>
     </li>

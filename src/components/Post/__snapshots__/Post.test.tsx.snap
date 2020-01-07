@@ -216,6 +216,34 @@ exports[`Post renders correctly 1`] = `
           </svg>
         </a>
       </li>
+      <li
+        className="share_button"
+      >
+        <a
+          aria-label="share_hatena-bookmark"
+          className="hatena-bookmark-button"
+          data-hatena-bookmark-layout="touch-counter"
+          href="https://b.hatena.ne.jp/entry/s/tadashi0713.com/undefined"
+          style={
+            Object {
+              "boxShadow": "none",
+            }
+          }
+          title="このエントリーをはてなブックマークに追加"
+        >
+          <img
+            alt="このエントリーをはてなブックマークに追加"
+            height="20"
+            src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
+            style={
+              Object {
+                "border": "none",
+              }
+            }
+            width="20"
+          />
+        </a>
+      </li>
     </ul>
     <div
       className="meta"
