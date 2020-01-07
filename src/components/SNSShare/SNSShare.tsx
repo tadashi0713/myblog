@@ -27,35 +27,26 @@ const SNSShare = ({ postUrl, postTitle }) => (
         type="text/javascript"
         src="//b.st-hatena.com/js/bookmark_button.js"
         charSet="utf-8"
-        async={true}/>
+        async={true}
+      />
     </Helmet>
     <li className={styles.share_button}>
-      <FacebookShareButton
-        url={postUrl}
-      >
+      <FacebookShareButton url={postUrl}>
         <FacebookIcon size={32} round />
       </FacebookShareButton>
     </li>
     <li className={styles.share_button}>
-      <TwitterShareButton
-        title={postTitle}
-        url={postUrl}
-      >
+      <TwitterShareButton title={postTitle} url={postUrl}>
         <TwitterIcon size={32} round />
       </TwitterShareButton>
     </li>
     <li className={styles.share_button}>
-      <LinkedinShareButton
-        url={postUrl}
-      >
+      <LinkedinShareButton url={postUrl}>
         <LinkedinIcon size={32} round />
       </LinkedinShareButton>
     </li>
     <li className={styles.share_button}>
-      <LineShareButton
-        title={postTitle}
-        url={postUrl}
-      >
+      <LineShareButton title={postTitle} url={postUrl}>
         <LineIcon size={32} round />
       </LineShareButton>
     </li>
@@ -86,13 +77,15 @@ const SNSShare = ({ postUrl, postTitle }) => (
         className="hatena-bookmark-button"
         data-hatena-bookmark-layout="touch-counter"
         title="このエントリーをはてなブックマークに追加"
-        style={{boxShadow: 'none' }}>
+        style={{ boxShadow: "none" }}
+      >
         <img
           src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
           alt="このエントリーをはてなブックマークに追加"
           width="20"
           height="20"
-          style={{border: 'none'}} />
+          style={{ border: "none" }}
+        />
       </a>
     </li>
   </ul>
