@@ -23,10 +23,14 @@ const SNSShare = ({ postUrl, postTitle }) => (
         charSet="utf-8"
         async={true}
       />
+      <script
+        type="text/javascript"
+        src="//b.st-hatena.com/js/bookmark_button.js"
+        charSet="utf-8"
+        async={true}/>
     </Helmet>
     <li className={styles.share_button}>
       <FacebookShareButton
-        // additionalProps={{ "aria-label": "share_facebook" }}
         url={postUrl}
       >
         <FacebookIcon size={32} round />
@@ -34,7 +38,6 @@ const SNSShare = ({ postUrl, postTitle }) => (
     </li>
     <li className={styles.share_button}>
       <TwitterShareButton
-        // additionalProps={{ "aria-label": "share_twitter" }}
         title={postTitle}
         url={postUrl}
       >
@@ -43,7 +46,6 @@ const SNSShare = ({ postUrl, postTitle }) => (
     </li>
     <li className={styles.share_button}>
       <LinkedinShareButton
-        // additionalProps={{ "aria-label": "share_linkedin" }}
         url={postUrl}
       >
         <LinkedinIcon size={32} round />
@@ -51,7 +53,6 @@ const SNSShare = ({ postUrl, postTitle }) => (
     </li>
     <li className={styles.share_button}>
       <LineShareButton
-        // additionalProps={{ "aria-label": "share_line" }}
         title={postTitle}
         url={postUrl}
       >
@@ -76,6 +77,22 @@ const SNSShare = ({ postUrl, postTitle }) => (
           className={styles.pocket_icon}
           icon={faGetPocket}
         />
+      </a>
+    </li>
+    <li className={styles.share_button}>
+      <a
+        aria-label="share_hatena-bookmark"
+        href={postUrl}
+        className="hatena-bookmark-button"
+        data-hatena-bookmark-layout="touch-counter"
+        title="このエントリーをはてなブックマークに追加"
+        style={{boxShadow: 'none' }}>
+        <img
+          src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
+          alt="このエントリーをはてなブックマークに追加"
+          width="20"
+          height="20"
+          style={{border: 'none'}} />
       </a>
     </li>
   </ul>
