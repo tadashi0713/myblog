@@ -44,8 +44,7 @@ exports[`ContactTemplate renders correctly 1`] = `
             <label
               className="form-label"
             >
-              Don’t fill this out:
-               
+              Don’t fill this out: 
             </label>
             <input
               className="form-control"
