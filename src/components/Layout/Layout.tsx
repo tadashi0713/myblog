@@ -9,6 +9,7 @@ const Layout = ({ children, title, description, image }) => (
       <html lang="en" />
       <meta name="description" content={description} />
       <meta name="og:image" content={image} />
+      <meta name="twitter:card" content="summary" />
     </Helmet>
     {children}
   </div>
