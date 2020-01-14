@@ -77,6 +77,44 @@ exports[`Feed renders correctly 1`] = `
         className="share_button"
       >
         <button
+          aria-label="email"
+          className="react-share__ShareButton"
+          onClick={[Function]}
+          separator=" "
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "inherit",
+              "cursor": "pointer",
+              "font": "inherit",
+              "padding": 0,
+            }
+          }
+        >
+          <svg
+            height={32}
+            viewBox="0 0 64 64"
+            width={32}
+          >
+            <circle
+              cx="32"
+              cy="32"
+              fill="#7f7f7f"
+              r="31"
+              style={Object {}}
+            />
+            <path
+              d="M17,22v20h30V22H17z M41.1,25L32,32.1L22.9,25H41.1z M20,39V26.6l12,9.3l12-9.3V39H20z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </li>
+      <li
+        className="share_button"
+      >
+        <button
           aria-label="facebook"
           className="react-share__ShareButton"
           onClick={[Function]}
@@ -226,31 +264,40 @@ exports[`Feed renders correctly 1`] = `
       <li
         className="share_button"
       >
-        <a
-          aria-label="share_pocket"
-          className="pocket_icon_link"
-          href="https://getpocket.com/edit?url=https://tadashi0713.com//test_0&title=test_0"
+        <button
+          aria-label="pocket"
+          className="react-share__ShareButton"
           onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "inherit",
+              "cursor": "pointer",
+              "font": "inherit",
+              "padding": 0,
+            }
+          }
+          title="test_0"
         >
           <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-get-pocket fa-w-14 pocket_icon"
-            color="#fff"
-            data-icon="get-pocket"
-            data-prefix="fab"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
+            height={32}
+            viewBox="0 0 64 64"
+            width={32}
           >
-            <path
-              d="M407.6 64h-367C18.5 64 0 82.5 0 104.6v135.2C0 364.5 99.7 464 224.2 464c124 0 223.8-99.5 223.8-224.2V104.6c0-22.4-17.7-40.6-40.4-40.6zm-162 268.5c-12.4 11.8-31.4 11.1-42.4 0C89.5 223.6 88.3 227.4 88.3 209.3c0-16.9 13.8-30.7 30.7-30.7 17 0 16.1 3.8 105.2 89.3 90.6-86.9 88.6-89.3 105.5-89.3 16.9 0 30.7 13.8 30.7 30.7 0 17.8-2.9 15.7-114.8 123.2z"
-              fill="currentColor"
+            <circle
+              cx="32"
+              cy="32"
+              fill="#EF3F56"
+              r="31"
               style={Object {}}
             />
+            <path
+              d="M41.084 29.065l-7.528 7.882a2.104 2.104 0 0 1-1.521.666 2.106 2.106 0 0 1-1.522-.666l-7.528-7.882c-.876-.914-.902-2.43-.065-3.384.84-.955 2.228-.987 3.1-.072l6.015 6.286 6.022-6.286c.88-.918 2.263-.883 3.102.071.841.938.82 2.465-.06 3.383l-.015.002zm6.777-10.976C47.463 16.84 46.361 16 45.14 16H18.905c-1.2 0-2.289.82-2.716 2.044-.125.363-.189.743-.189 1.125v10.539l.112 2.096c.464 4.766 2.73 8.933 6.243 11.838.06.053.125.102.19.153l.04.033c1.882 1.499 3.986 2.514 6.259 3.014a14.662 14.662 0 0 0 6.13.052c.118-.042.235-.065.353-.087.03 0 .065-.022.098-.042a15.395 15.395 0 0 0 6.011-2.945l.039-.045.18-.153c3.502-2.902 5.765-7.072 6.248-11.852L48 29.674v-10.52c0-.366-.041-.728-.161-1.08l.022.015z"
+              fill="white"
+            />
           </svg>
-        </a>
+        </button>
       </li>
       <li
         className="share_button"
@@ -361,6 +408,44 @@ exports[`Feed renders correctly 1`] = `
         className="share_button"
       >
         <button
+          aria-label="email"
+          className="react-share__ShareButton"
+          onClick={[Function]}
+          separator=" "
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "inherit",
+              "cursor": "pointer",
+              "font": "inherit",
+              "padding": 0,
+            }
+          }
+        >
+          <svg
+            height={32}
+            viewBox="0 0 64 64"
+            width={32}
+          >
+            <circle
+              cx="32"
+              cy="32"
+              fill="#7f7f7f"
+              r="31"
+              style={Object {}}
+            />
+            <path
+              d="M17,22v20h30V22H17z M41.1,25L32,32.1L22.9,25H41.1z M20,39V26.6l12,9.3l12-9.3V39H20z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </li>
+      <li
+        className="share_button"
+      >
+        <button
           aria-label="facebook"
           className="react-share__ShareButton"
           onClick={[Function]}
@@ -510,31 +595,40 @@ exports[`Feed renders correctly 1`] = `
       <li
         className="share_button"
       >
-        <a
-          aria-label="share_pocket"
-          className="pocket_icon_link"
-          href="https://getpocket.com/edit?url=https://tadashi0713.com//test_1&title=test_1"
+        <button
+          aria-label="pocket"
+          className="react-share__ShareButton"
           onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "inherit",
+              "cursor": "pointer",
+              "font": "inherit",
+              "padding": 0,
+            }
+          }
+          title="test_1"
         >
           <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-get-pocket fa-w-14 pocket_icon"
-            color="#fff"
-            data-icon="get-pocket"
-            data-prefix="fab"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
+            height={32}
+            viewBox="0 0 64 64"
+            width={32}
           >
-            <path
-              d="M407.6 64h-367C18.5 64 0 82.5 0 104.6v135.2C0 364.5 99.7 464 224.2 464c124 0 223.8-99.5 223.8-224.2V104.6c0-22.4-17.7-40.6-40.4-40.6zm-162 268.5c-12.4 11.8-31.4 11.1-42.4 0C89.5 223.6 88.3 227.4 88.3 209.3c0-16.9 13.8-30.7 30.7-30.7 17 0 16.1 3.8 105.2 89.3 90.6-86.9 88.6-89.3 105.5-89.3 16.9 0 30.7 13.8 30.7 30.7 0 17.8-2.9 15.7-114.8 123.2z"
-              fill="currentColor"
+            <circle
+              cx="32"
+              cy="32"
+              fill="#EF3F56"
+              r="31"
               style={Object {}}
             />
+            <path
+              d="M41.084 29.065l-7.528 7.882a2.104 2.104 0 0 1-1.521.666 2.106 2.106 0 0 1-1.522-.666l-7.528-7.882c-.876-.914-.902-2.43-.065-3.384.84-.955 2.228-.987 3.1-.072l6.015 6.286 6.022-6.286c.88-.918 2.263-.883 3.102.071.841.938.82 2.465-.06 3.383l-.015.002zm6.777-10.976C47.463 16.84 46.361 16 45.14 16H18.905c-1.2 0-2.289.82-2.716 2.044-.125.363-.189.743-.189 1.125v10.539l.112 2.096c.464 4.766 2.73 8.933 6.243 11.838.06.053.125.102.19.153l.04.033c1.882 1.499 3.986 2.514 6.259 3.014a14.662 14.662 0 0 0 6.13.052c.118-.042.235-.065.353-.087.03 0 .065-.022.098-.042a15.395 15.395 0 0 0 6.011-2.945l.039-.045.18-.153c3.502-2.902 5.765-7.072 6.248-11.852L48 29.674v-10.52c0-.366-.041-.728-.161-1.08l.022.015z"
+              fill="white"
+            />
           </svg>
-        </a>
+        </button>
       </li>
       <li
         className="share_button"

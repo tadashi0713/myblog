@@ -1,17 +1,19 @@
 import React from "react";
 import {
+  EmailShareButton,
   FacebookShareButton,
   FacebookIcon,
   TwitterShareButton,
   TwitterIcon,
   LinkedinShareButton,
   LinkedinIcon,
+  PocketShareButton,
   LineShareButton,
-  LineIcon
+  LineIcon,
+  EmailIcon,
+  PocketIcon
 } from "react-share";
 import Helmet from "react-helmet";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGetPocket } from "@fortawesome/free-brands-svg-icons";
 import styles from "./SNSShare.module.scss";
 
 const SNSShare = ({ postUrl, postTitle }) => (
@@ -30,6 +32,11 @@ const SNSShare = ({ postUrl, postTitle }) => (
         async={true}
       />
     </Helmet>
+    <li className={styles.share_button}>
+      <EmailShareButton url={postUrl}>
+        <EmailIcon size={32} round />
+      </EmailShareButton>
+    </li>
     <li className={styles.share_button}>
       <FacebookShareButton url={postUrl}>
         <FacebookIcon size={32} round />
@@ -51,24 +58,9 @@ const SNSShare = ({ postUrl, postTitle }) => (
       </LineShareButton>
     </li>
     <li className={styles.share_button}>
-      <a
-        aria-label="share_pocket"
-        className={styles.pocket_icon_link}
-        href={`https://getpocket.com/edit?url=${postUrl}&title=${postTitle}`}
-        onClick={() =>
-          window.open(
-            this.href,
-            "PCwindow",
-            "width=550, height=350, menubar=no, toolbar=no, scrollbars=yes"
-          )
-        }
-      >
-        <FontAwesomeIcon
-          color="#fff"
-          className={styles.pocket_icon}
-          icon={faGetPocket}
-        />
-      </a>
+      <PocketShareButton title={postTitle} url={postUrl}>
+        <PocketIcon size={32} round />
+      </PocketShareButton>
     </li>
     <li className={styles.share_button}>
       <a
