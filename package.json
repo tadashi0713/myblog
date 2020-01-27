@@ -70,7 +70,7 @@
     "invariant": "^2.2.4",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
-    "netlify-cms": "^2.10.12",
+    "netlify-cms": "^2.10.13",
     "node-sass": "^4.13.1",
     "normalize-scss": "^7.0.1",
     "prismjs": "^1.19.0",
