@@ -124,6 +124,6 @@
     "stylelint-config-recommended-scss": "4.2.0",
     "stylelint-scss": "3.13.0",
     "ts-jest": "24.3.0",
-    "typescript": "3.7.5"
+    "typescript": "3.8.3"
   }
 }
