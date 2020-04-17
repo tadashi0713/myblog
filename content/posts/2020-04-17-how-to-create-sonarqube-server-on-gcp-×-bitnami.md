@@ -14,13 +14,13 @@ description: >-
   I will share some tips of creating it.
 category: CLOUD
 tags:
+  - English
   - Sonarqube
   - GCP
   - Bitnami
 ---
 ![](/media/sonarqube.jpg)
 
-<br />
 I had chance to create SonarQube server.
 
 This time, I created SonarQube server on GCP using Bitnami and reduced cost of creating.
@@ -45,7 +45,9 @@ When you want to deploy on GCP,
 * Select zone, machine type, etc
 * Deploy
 
-Default setting costs $40~50 per month(Depending on zone)
+<br />
+
+Default setting costs $40~50 per month(Depending on zone), which includes
 
 * Bitnami SonarQube Usage Fee: Free
 * VM instance: 2 vCPUs + 4 GB memory (e2-medium): $65.91/month
