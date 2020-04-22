@@ -7,7 +7,7 @@ describe("Layout", () => {
     children: "test",
     description: "test",
     title: "test",
-    image: "sample.json"
+    image: "sample.json",
   };
 
   it("renders correctly", () => {

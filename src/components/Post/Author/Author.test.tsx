@@ -12,12 +12,12 @@ describe("Author", () => {
               name: "test",
               bio: "test",
               contacts: {
-                linkedin: "test"
-              }
-            }
-          }
-        }
-      }
+                linkedin: "test",
+              },
+            },
+          },
+        },
+      },
     };
 
     const tree = renderer.create(<Author {...props} />).toJSON();

@@ -9,7 +9,7 @@ import siteConfig from "../../../config.js";
 
 const Feed = ({ edges }) => (
   <div className={styles.feed}>
-    {edges.map(edge => (
+    {edges.map((edge) => (
       <div className={styles.feed__item} key={edge.node.fields.slug}>
         <div className={styles["feed__item-meta"]}>
           <time

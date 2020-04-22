@@ -14,7 +14,7 @@ const IndexTemplate = ({ data, pageContext }) => {
     hasNextPage,
     hasPrevPage,
     prevPagePath,
-    nextPagePath
+    nextPagePath,
   } = pageContext;
 
   const { edges } = data.allMarkdownRemark;

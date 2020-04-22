@@ -8,10 +8,10 @@ describe("ContactThanksTemplate", () => {
       site: {
         siteMetadata: {
           title: "test",
-          subtitle: "test"
-        }
-      }
-    }
+          subtitle: "test",
+        },
+      },
+    },
   };
 
   it("renders correctly", () => {

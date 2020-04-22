@@ -5,7 +5,7 @@ import Image from "./Image";
 describe("Image", () => {
   const props = {
     filename: "sample.jpg",
-    alt: "sample"
+    alt: "sample",
   };
 
   it("renders correctly", () => {
