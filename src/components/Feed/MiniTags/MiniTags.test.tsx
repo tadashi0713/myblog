@@ -6,7 +6,7 @@ describe("MiniTags", () => {
   it("renders correctly", () => {
     const props = {
       tags: ["test_0", "test_1"],
-      tagSlugs: ["/test_0", "/test_1"]
+      tagSlugs: ["/test_0", "/test_1"],
     };
 
     const tree = renderer.create(<MiniTags {...props} />).toJSON();

@@ -23,7 +23,7 @@ export const PureAuthor = ({ data }) => {
   );
 };
 
-export const Author = props => (
+export const Author = (props) => (
   <StaticQuery
     query={graphql`
       query AuthorQuery {
@@ -40,7 +40,7 @@ export const Author = props => (
         }
       }
     `}
-    render={data => <PureAuthor {...props} data={data} />}
+    render={(data) => <PureAuthor {...props} data={data} />}
   />
 );
 

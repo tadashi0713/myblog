@@ -11,7 +11,7 @@ import {
   LineShareButton,
   LineIcon,
   EmailIcon,
-  PocketIcon
+  PocketIcon,
 } from "react-share";
 import Helmet from "react-helmet";
 import styles from "./SNSShare.module.scss";

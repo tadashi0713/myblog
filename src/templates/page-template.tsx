@@ -9,7 +9,7 @@ const PageTemplate = ({ data }) => {
 
   const {
     title: pageTitle,
-    description: pageDescription
+    description: pageDescription,
   } = data.markdownRemark.frontmatter;
 
   const { html: pageBody } = data.markdownRemark;

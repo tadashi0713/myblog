@@ -21,8 +21,8 @@ const Image = ({ filename, alt }) => (
         }
       }
     `}
-    render={data => {
-      const image = data.images.edges.find(n =>
+    render={(data) => {
+      const image = data.images.edges.find((n) =>
         n.node.relativePath.includes(filename)
       );
 

@@ -7,9 +7,9 @@ describe("Author", () => {
     author: {
       name: "test",
       photo: "/photo.jpg",
-      bio: "test"
+      bio: "test",
     },
-    isIndex: true
+    isIndex: true,
   };
 
   it("renders correctly", () => {

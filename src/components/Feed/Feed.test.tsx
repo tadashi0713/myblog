@@ -10,7 +10,7 @@ describe("Feed", () => {
           fields: {
             slug: "/test_0",
             categorySlug: "/test_0",
-            tagSlugs: ["/test_0"]
+            tagSlugs: ["/test_0"],
           },
           frontmatter: {
             date: "2016-09-01",
@@ -18,16 +18,16 @@ describe("Feed", () => {
             category: "test_0",
             title: "test_0",
             image: "/media/test_0.png",
-            tags: ["test_0"]
-          }
-        }
+            tags: ["test_0"],
+          },
+        },
       },
       {
         node: {
           fields: {
             slug: "/test_1",
             categorySlug: "/test_1",
-            tagSlugs: ["/test_1"]
+            tagSlugs: ["/test_1"],
           },
           frontmatter: {
             date: "2016-09-01",
@@ -35,11 +35,11 @@ describe("Feed", () => {
             category: "test_1",
             title: "test_1",
             image: "/media/test_1.png",
-            tags: ["test_1"]
-          }
-        }
-      }
-    ]
+            tags: ["test_1"],
+          },
+        },
+      },
+    ],
   };
 
   it("renders correctly", () => {

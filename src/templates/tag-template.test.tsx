@@ -9,12 +9,12 @@ describe("TagTemplate", () => {
         group: [
           {
             fieldValue: "test_0",
-            totalCount: 1
+            totalCount: 1,
           },
           {
             fieldValue: "test_1",
-            totalCount: 2
-          }
+            totalCount: 2,
+          },
         ],
         edges: [
           {
@@ -22,7 +22,7 @@ describe("TagTemplate", () => {
               fields: {
                 slug: "/test_0",
                 categorySlug: "/test",
-                tagSlugs: ["/test_0"]
+                tagSlugs: ["/test_0"],
               },
               frontmatter: {
                 date: "2016-09-01",
@@ -30,16 +30,16 @@ describe("TagTemplate", () => {
                 category: "test",
                 title: "test_0",
                 image: "/media/test_0.png",
-                tags: ["test_0"]
-              }
-            }
+                tags: ["test_0"],
+              },
+            },
           },
           {
             node: {
               fields: {
                 slug: "/test_1",
                 categorySlug: "/test",
-                tagSlugs: ["/test_1"]
+                tagSlugs: ["/test_1"],
               },
               frontmatter: {
                 date: "2016-09-01",
@@ -47,18 +47,18 @@ describe("TagTemplate", () => {
                 category: "test",
                 title: "test_1",
                 image: "/media/test_1.png",
-                tags: ["test_1"]
-              }
-            }
-          }
-        ]
+                tags: ["test_1"],
+              },
+            },
+          },
+        ],
       },
       site: {
         siteMetadata: {
           title: "test",
-          subtitle: "test"
-        }
-      }
+          subtitle: "test",
+        },
+      },
     },
     pageContext: {
       tag: "test",
@@ -66,8 +66,8 @@ describe("TagTemplate", () => {
       prevPagePath: "/page/1",
       nextPagePath: "/page/3",
       hasNextPage: true,
-      hasPrevPage: true
-    }
+      hasPrevPage: true,
+    },
   };
 
   it("renders correctly", () => {

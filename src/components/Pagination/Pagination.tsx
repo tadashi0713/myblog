@@ -10,16 +10,16 @@ const Pagination = ({
   prevPagePath,
   nextPagePath,
   hasNextPage,
-  hasPrevPage
+  hasPrevPage,
 }) => {
   const prevClassName = cx({
     "pagination__prev-link": true,
-    "pagination__prev-link--disable": !hasPrevPage
+    "pagination__prev-link--disable": !hasPrevPage,
   });
 
   const nextClassName = cx({
     "pagination__next-link": true,
-    "pagination__next-link--disable": !hasNextPage
+    "pagination__next-link--disable": !hasNextPage,
   });
 
   return (

@@ -9,7 +9,7 @@ const PostTemplate = ({ data }) => {
   const {
     title: postTitle,
     description: postDescription,
-    image: postImage
+    image: postImage,
   } = data.markdownRemark.frontmatter;
 
   const metaDescription =

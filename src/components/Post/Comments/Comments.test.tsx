@@ -9,12 +9,12 @@ describe("Comments", () => {
         site: {
           siteMetadata: {
             url: "http://localhost",
-            disqusShortname: "test"
-          }
-        }
+            disqusShortname: "test",
+          },
+        },
       },
       postTitle: "test",
-      postSlug: "/test"
+      postSlug: "/test",
     };
 
     const tree = renderer.create(<Comments {...props} />).toJSON();
