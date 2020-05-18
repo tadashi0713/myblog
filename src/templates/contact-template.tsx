@@ -94,7 +94,7 @@ export default class ContactTemplate extends React.Component {
               <Form.Label>Message / お問い合わせ内容</Form.Label>
               <Form.Control
                 as="textarea"
-                rows="5"
+                rows={5}
                 name="message"
                 onChange={this.handleChange}
                 required={true}
