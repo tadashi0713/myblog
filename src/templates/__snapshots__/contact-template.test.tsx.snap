@@ -97,7 +97,7 @@ exports[`ContactTemplate renders correctly 1`] = `
               name="message"
               onChange={[Function]}
               required={true}
-              rows="5"
+              rows={5}
             />
           </div>
           <div />
