@@ -13,7 +13,7 @@ import {
   EmailIcon,
   PocketIcon,
 } from "react-share";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet";
 import styles from "./SNSShare.module.scss";
 
 const SNSShare = ({ postUrl, postTitle }) => (
