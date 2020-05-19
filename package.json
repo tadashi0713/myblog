@@ -89,7 +89,7 @@
     "@babel/preset-env": "7.9.6",
     "@babel/preset-react": "7.9.4",
     "@types/classnames": "2.2.10",
-    "@types/jest": "25.2.2",
+    "@types/jest": "25.2.3",
     "@types/lodash": "4.14.151",
     "@types/node": "12.12.35",
     "@types/react-google-recaptcha": "1.1.2",
