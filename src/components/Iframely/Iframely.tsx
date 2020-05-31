@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { iframely } from "@iframely/embed.js";
 
 export default class Iframely extends React.Component {
   componentDidMount() {
@@ -15,7 +16,7 @@ export default class Iframely extends React.Component {
   render() {
     return (
       <Helmet>
-        <script type="text/javascript" src="https://cdn.iframe.ly/embed.js" />
+        <script type="text/javascript" src={iframely} />
       </Helmet>
     );
   }
