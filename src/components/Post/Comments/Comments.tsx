@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 import ReactDisqusComments from "react-disqus-comments";
+import LazyLoad from "react-lazy-load";
 
 export const PureComments = ({ data, postTitle, postSlug }) => {
   const { url, disqusShortname } = data.site.siteMetadata;
@@ -10,12 +11,14 @@ export const PureComments = ({ data, postTitle, postSlug }) => {
   }
 
   return (
-    <ReactDisqusComments
-      shortname={disqusShortname}
-      identifier={postTitle}
-      title={postTitle}
-      url={url + postSlug}
-    />
+    <LazyLoad offsetTop={400}>
+      <ReactDisqusComments
+        shortname={disqusShortname}
+        identifier={postTitle}
+        title={postTitle}
+        url={url + postSlug}
+      />
+    </LazyLoad>
   );
 };
 
