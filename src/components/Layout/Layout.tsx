@@ -6,9 +6,9 @@ const Layout = ({ children, title, description, image }) => (
   <div className={styles.layout}>
     <Helmet>
       <title>{title}</title>
-      <html lang="en" />
+      <html lang="ja" />
       <meta name="description" content={description} />
-      <meta name="og:image" content={image} />
+      <meta property="og:image" content={image} />
       <meta name="twitter:card" content="summary_large_image" />
     </Helmet>
     {children}
