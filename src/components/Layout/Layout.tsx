@@ -10,6 +10,8 @@ const Layout = ({ children, title, description, image }) => (
       <html lang="ja" />
       <meta name="description" content={description} />
       <meta property="og:image" content={`${siteConfig.url}${image}`} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
       <meta name="twitter:card" content="summary_large_image" />
     </Helmet>
     {children}
