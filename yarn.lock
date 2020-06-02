@@ -16105,6 +16105,11 @@ react-side-effect@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.0.tgz#1ce4a8b4445168c487ed24dab886421f74d380d3"
   integrity sha512-IgmcegOSi5SNX+2Snh1vqmF0Vg/CbkycU9XZbOHJlZ6kMzTmi3yc254oB1WCkgA7OQtIAoLmcSFuHTc/tlcqXg==
 
+react-social-sharebuttons@^3.0.0-alpha2:
+  version "3.0.0-alpha2"
+  resolved "https://registry.yarnpkg.com/react-social-sharebuttons/-/react-social-sharebuttons-3.0.0-alpha2.tgz#82b4606d2be1922418df0aa7398ad31943ac3b2f"
+  integrity sha512-6mI9yCmK6rK+UC7lswCToLLQzGcJXyBSM2+99L9yuogu4w+aCHyHgaok/ORLFeHrLoKfc3PKclI2RRb/cW3Mtw==
+
 react-sortable-hoc@^1.0.0:
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/react-sortable-hoc/-/react-sortable-hoc-1.10.1.tgz#c352f26263acbcff9cf266bc755653a56c983a38"

@@ -13,25 +13,11 @@ import {
   EmailIcon,
   PocketIcon,
 } from "react-share";
-import { Helmet } from "react-helmet";
+import { HatenabookmarkButton } from "react-social-sharebuttons";
 import styles from "./SNSShare.module.scss";
 
 const SNSShare = ({ postUrl, postTitle }) => (
   <ul className={styles.content}>
-    <Helmet>
-      <script
-        type="text/javascript"
-        src="//widgets.getpocket.com/v1/j/btn.js?v=1"
-        charSet="utf-8"
-        async={true}
-      />
-      <script
-        type="text/javascript"
-        src="//b.st-hatena.com/js/bookmark_button.js"
-        charSet="utf-8"
-        async={true}
-      />
-    </Helmet>
     <li className={styles.share_button}>
       <EmailShareButton url={postUrl}>
         <EmailIcon size={32} round />
@@ -63,24 +49,12 @@ const SNSShare = ({ postUrl, postTitle }) => (
       </PocketShareButton>
     </li>
     <li className={styles.share_button}>
-      <a
-        aria-label="share_hatena-bookmark"
-        href={
+      <HatenabookmarkButton
+        url={
           "https://b.hatena.ne.jp/entry/s/" + postUrl.replace("https://", "")
         }
-        className="hatena-bookmark-button"
-        data-hatena-bookmark-layout="touch-counter"
-        title="このエントリーをはてなブックマークに追加"
-        style={{ boxShadow: "none" }}
-      >
-        <img
-          src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
-          alt="このエントリーをはてなブックマークに追加"
-          width="20"
-          height="20"
-          style={{ border: "none" }}
-        />
-      </a>
+        layout="touch-counter"
+      />
     </li>
   </ul>
 );
