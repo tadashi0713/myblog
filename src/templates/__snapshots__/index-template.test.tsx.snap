@@ -322,30 +322,28 @@ exports[`IndexTemplate renders correctly 1`] = `
               <li
                 className="share_button"
               >
-                <a
-                  aria-label="share_hatena-bookmark"
-                  className="hatena-bookmark-button"
-                  data-hatena-bookmark-layout="touch-counter"
-                  href="https://b.hatena.ne.jp/entry/s/tadashi0713.com//test_0"
-                  style={
-                    Object {
-                      "boxShadow": "none",
-                    }
-                  }
-                  title="このエントリーをはてなブックマークに追加"
-                >
-                  <img
-                    alt="このエントリーをはてなブックマークに追加"
-                    height="20"
-                    src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
-                    style={
-                      Object {
-                        "border": "none",
+                <div>
+                  <a
+                    className="hatena-bookmark-button"
+                    data-hatena-bookmark-lang="ja"
+                    data-hatena-bookmark-layout="touch-counter"
+                    data-hatena-bookmark-title=""
+                    href="http://b.hatena.ne.jp/entry/https://b.hatena.ne.jp/entry/s/tadashi0713.com//test_0"
+                    title="このエントリーをはてなブックマークに追加"
+                  >
+                    <img
+                      alt="このエントリーをはてなブックマークに追加"
+                      src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
+                      style={
+                        Object {
+                          "border": "none",
+                          "height": 20,
+                          "width": 20,
+                        }
                       }
-                    }
-                    width="20"
-                  />
-                </a>
+                    />
+                  </a>
+                </div>
               </li>
             </ul>
             <Link
@@ -653,30 +651,28 @@ exports[`IndexTemplate renders correctly 1`] = `
               <li
                 className="share_button"
               >
-                <a
-                  aria-label="share_hatena-bookmark"
-                  className="hatena-bookmark-button"
-                  data-hatena-bookmark-layout="touch-counter"
-                  href="https://b.hatena.ne.jp/entry/s/tadashi0713.com//test_1"
-                  style={
-                    Object {
-                      "boxShadow": "none",
-                    }
-                  }
-                  title="このエントリーをはてなブックマークに追加"
-                >
-                  <img
-                    alt="このエントリーをはてなブックマークに追加"
-                    height="20"
-                    src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
-                    style={
-                      Object {
-                        "border": "none",
+                <div>
+                  <a
+                    className="hatena-bookmark-button"
+                    data-hatena-bookmark-lang="ja"
+                    data-hatena-bookmark-layout="touch-counter"
+                    data-hatena-bookmark-title=""
+                    href="http://b.hatena.ne.jp/entry/https://b.hatena.ne.jp/entry/s/tadashi0713.com//test_1"
+                    title="このエントリーをはてなブックマークに追加"
+                  >
+                    <img
+                      alt="このエントリーをはてなブックマークに追加"
+                      src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
+                      style={
+                        Object {
+                          "border": "none",
+                          "height": 20,
+                          "width": 20,
+                        }
                       }
-                    }
-                    width="20"
-                  />
-                </a>
+                    />
+                  </a>
+                </div>
               </li>
             </ul>
             <Link
