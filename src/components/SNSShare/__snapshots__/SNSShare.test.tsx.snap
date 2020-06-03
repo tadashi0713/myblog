@@ -239,7 +239,7 @@ exports[`SNSShare renders correctly 1`] = `
         data-hatena-bookmark-lang="ja"
         data-hatena-bookmark-layout="touch-counter"
         data-hatena-bookmark-title=""
-        href="http://b.hatena.ne.jp/entry/https://b.hatena.ne.jp/entry/s/tadashi0713.com/sample"
+        href="http://b.hatena.ne.jp/entry/https://tadashi0713.com/sample"
         title="このエントリーをはてなブックマークに追加"
       >
         <img

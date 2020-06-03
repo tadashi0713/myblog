@@ -49,12 +49,7 @@ const SNSShare = ({ postUrl, postTitle }) => (
       </PocketShareButton>
     </li>
     <li className={styles.share_button}>
-      <HatenabookmarkButton
-        url={
-          "https://b.hatena.ne.jp/entry/s/" + postUrl.replace("https://", "")
-        }
-        layout="touch-counter"
-      />
+      <HatenabookmarkButton url={postUrl} layout="touch-counter" />
     </li>
   </ul>
 );
