@@ -83,7 +83,8 @@
     "react-google-recaptcha": "^2.0.0",
     "react-helmet": "^6.0.0",
     "react-lazy-load": "^3.0.13",
-    "react-share": "^4.0.1"
+    "react-share": "^4.0.1",
+    "react-social-sharebuttons": "^3.0.0-alpha2"
   },
   "devDependencies": {
     "@babel/core": "7.10.2",
