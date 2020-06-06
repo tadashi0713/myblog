@@ -1,8 +1,8 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { Link } from "gatsby";
 import styles from "./Menu.module.scss";
 
-const Menu = ({ menu }) => (
+const Menu = ({ menu }): ReactElement => (
   <nav className={styles.menu}>
     <ul className={styles.menu__list}>
       {menu.map((item) => (

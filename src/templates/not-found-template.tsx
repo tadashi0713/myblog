@@ -1,10 +1,10 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { graphql } from "gatsby";
 import Sidebar from "../components/Sidebar";
 import Layout from "../components/Layout";
 import Page from "../components/Page";
 
-const NotFoundTemplate = ({ data }) => {
+const NotFoundTemplate = ({ data }): ReactElement => {
   const { title, subtitle } = data.site.siteMetadata;
 
   return (

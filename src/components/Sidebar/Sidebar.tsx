@@ -1,11 +1,11 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { graphql, StaticQuery } from "gatsby";
 import Author from "./Author";
 import Contacts from "./Contacts";
 import Menu from "./Menu";
 import styles from "./Sidebar.module.scss";
 
-export const PureSidebar = ({ data, isIndex }) => {
+export const PureSidebar = ({ data, isIndex }): ReactElement => {
   const { author, menu } = data.site.siteMetadata;
 
   return (

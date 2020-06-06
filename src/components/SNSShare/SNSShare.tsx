@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import {
   EmailShareButton,
   FacebookShareButton,
@@ -16,7 +16,7 @@ import {
 import { HatenabookmarkButton } from "react-social-sharebuttons";
 import styles from "./SNSShare.module.scss";
 
-const SNSShare = ({ postUrl, postTitle }) => (
+const SNSShare = ({ postUrl, postTitle }): ReactElement => (
   <ul className={styles.content}>
     <li className={styles.share_button}>
       <EmailShareButton url={postUrl}>

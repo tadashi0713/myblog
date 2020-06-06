@@ -1,10 +1,10 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Sidebar from "../components/Sidebar";
 import Page from "../components/Page";
 
-const PageTemplate = ({ data }) => {
+const PageTemplate = ({ data }): ReactElement => {
   const { title: siteTitle, subtitle: siteSubtitle } = data.site.siteMetadata;
 
   const {

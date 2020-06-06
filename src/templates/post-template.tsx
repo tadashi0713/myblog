@@ -1,9 +1,9 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Post from "../components/Post";
 
-const PostTemplate = ({ data }) => {
+const PostTemplate = ({ data }): ReactElement => {
   const { title: siteTitle, subtitle: siteSubtitle } = data.site.siteMetadata;
 
   const {
