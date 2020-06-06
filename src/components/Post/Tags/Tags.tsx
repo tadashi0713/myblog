@@ -1,8 +1,8 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { Link } from "gatsby";
 import styles from "./Tags.module.scss";
 
-const Tags = ({ tags, tagSlugs }) => (
+const Tags = ({ tags, tagSlugs }): ReactElement => (
   <div className={styles.tags}>
     <ul className={styles.tags__list}>
       {tagSlugs.map((slug, i) => (

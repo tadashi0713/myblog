@@ -1,6 +1,6 @@
-import React from "react";
+import React, { ReactElement } from "react";
 
-const PostPreview = ({ entry, widgetFor }) => {
+const PostPreview = ({ entry, widgetFor }): ReactElement => {
   const body = widgetFor("body");
   const title = entry.getIn(["data", "title"]);
 

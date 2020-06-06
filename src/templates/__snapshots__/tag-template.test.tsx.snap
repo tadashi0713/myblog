@@ -323,27 +323,23 @@ exports[`TagTemplate renders correctly 1`] = `
                 className="share_button"
               >
                 <a
-                  aria-label="share_hatena-bookmark"
                   className="hatena-bookmark-button"
+                  data-hatena-bookmark-lang="ja"
                   data-hatena-bookmark-layout="touch-counter"
-                  href="https://b.hatena.ne.jp/entry/s/tadashi0713.com//test_0"
-                  style={
-                    Object {
-                      "boxShadow": "none",
-                    }
-                  }
+                  data-hatena-bookmark-title=""
+                  href="http://b.hatena.ne.jp/entry/https://tadashi0713.com//test_0"
                   title="このエントリーをはてなブックマークに追加"
                 >
                   <img
                     alt="このエントリーをはてなブックマークに追加"
-                    height="20"
                     src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
                     style={
                       Object {
                         "border": "none",
+                        "height": 20,
+                        "width": 20,
                       }
                     }
-                    width="20"
                   />
                 </a>
               </li>
@@ -654,27 +650,23 @@ exports[`TagTemplate renders correctly 1`] = `
                 className="share_button"
               >
                 <a
-                  aria-label="share_hatena-bookmark"
                   className="hatena-bookmark-button"
+                  data-hatena-bookmark-lang="ja"
                   data-hatena-bookmark-layout="touch-counter"
-                  href="https://b.hatena.ne.jp/entry/s/tadashi0713.com//test_1"
-                  style={
-                    Object {
-                      "boxShadow": "none",
-                    }
-                  }
+                  data-hatena-bookmark-title=""
+                  href="http://b.hatena.ne.jp/entry/https://tadashi0713.com//test_1"
                   title="このエントリーをはてなブックマークに追加"
                 >
                   <img
                     alt="このエントリーをはてなブックマークに追加"
-                    height="20"
                     src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
                     style={
                       Object {
                         "border": "none",
+                        "height": 20,
+                        "width": 20,
                       }
                     }
-                    width="20"
                   />
                 </a>
               </li>
