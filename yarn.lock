@@ -17340,10 +17340,10 @@ react-side-effect@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.0.tgz#1ce4a8b4445168c487ed24dab886421f74d380d3"
   integrity sha512-IgmcegOSi5SNX+2Snh1vqmF0Vg/CbkycU9XZbOHJlZ6kMzTmi3yc254oB1WCkgA7OQtIAoLmcSFuHTc/tlcqXg==
 
-react-social-sharebuttons@^3.0.0-alpha2:
-  version "3.0.0-alpha2"
-  resolved "https://registry.yarnpkg.com/react-social-sharebuttons/-/react-social-sharebuttons-3.0.0-alpha2.tgz#82b4606d2be1922418df0aa7398ad31943ac3b2f"
-  integrity sha512-6mI9yCmK6rK+UC7lswCToLLQzGcJXyBSM2+99L9yuogu4w+aCHyHgaok/ORLFeHrLoKfc3PKclI2RRb/cW3Mtw==
+react-social-sharebuttons@^3.0.0-rc4:
+  version "3.0.0-rc4"
+  resolved "https://registry.yarnpkg.com/react-social-sharebuttons/-/react-social-sharebuttons-3.0.0-rc4.tgz#9e59b2cef17d8368a7099c1a986e9cbed8aa93e9"
+  integrity sha512-PEBC88bCgi189zdR4ZKmfohQcD7L2f2t8h5c+AlaE0p4QtUR5NEs1AWiRDBaGJYu/qfmjxHnujkn09dQ2H40Mg==
 
 react-sortable-hoc@^1.0.0:
   version "1.10.1"
