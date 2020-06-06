@@ -269,26 +269,28 @@ exports[`PostTemplate renders correctly 1`] = `
         <li
           className="share_button"
         >
-          <a
-            className="hatena-bookmark-button"
-            data-hatena-bookmark-lang="ja"
-            data-hatena-bookmark-layout="touch-counter"
-            data-hatena-bookmark-title=""
-            href="http://b.hatena.ne.jp/entry/https://tadashi0713.com/undefined"
-            title="このエントリーをはてなブックマークに追加"
-          >
-            <img
-              alt="このエントリーをはてなブックマークに追加"
-              src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
-              style={
-                Object {
-                  "border": "none",
-                  "height": 20,
-                  "width": 20,
+          <div>
+            <a
+              className="hatena-bookmark-button"
+              data-hatena-bookmark-lang="ja"
+              data-hatena-bookmark-layout="touch-counter"
+              data-hatena-bookmark-title=""
+              href="http://b.hatena.ne.jp/entry/https://tadashi0713.com/undefined"
+              title="このエントリーをはてなブックマークに追加"
+            >
+              <img
+                alt="このエントリーをはてなブックマークに追加"
+                src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
+                style={
+                  Object {
+                    "border": "none",
+                    "height": 20,
+                    "width": 20,
+                  }
                 }
-              }
-            />
-          </a>
+              />
+            </a>
+          </div>
         </li>
       </ul>
       <div
