@@ -1,9 +1,9 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { Helmet } from "react-helmet";
 import styles from "./Layout.module.scss";
 import siteConfig from "../../../config.js";
 
-const Layout = ({ children, title, description, image }) => (
+const Layout = ({ children, title, description, image }): ReactElement => (
   <div className={styles.layout}>
     <Helmet>
       <title>{title}</title>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { Link } from "gatsby";
 import Author from "./Author";
 import Comments from "./Comments";
@@ -10,7 +10,7 @@ import styles from "./Post.module.scss";
 import Iframely from "../Iframely";
 import siteConfig from "../../../config.js";
 
-const Post = ({ post }) => {
+const Post = ({ post }): ReactElement => {
   const { tags, title, date } = post.frontmatter;
 
   const { html } = post;

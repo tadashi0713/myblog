@@ -1,9 +1,9 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { graphql, StaticQuery } from "gatsby";
 import ReactDisqusComments from "react-disqus-comments";
 import LazyLoad from "react-lazy-load";
 
-export const PureComments = ({ data, postTitle, postSlug }) => {
+export const PureComments = ({ data, postTitle, postSlug }): ReactElement => {
   const { url, disqusShortname } = data.site.siteMetadata;
 
   if (!disqusShortname) {

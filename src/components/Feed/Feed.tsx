@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import moment from "moment";
 import { Link } from "gatsby";
 import styles from "./Feed.module.scss";
@@ -7,7 +7,7 @@ import MiniTags from "./MiniTags";
 import Image from "../Image/index";
 import siteConfig from "../../../config.js";
 
-const Feed = ({ edges }) => (
+const Feed = ({ edges }): ReactElement => (
   <div className={styles.feed}>
     {edges.map((edge) => (
       <div className={styles.feed__item} key={edge.node.fields.slug}>

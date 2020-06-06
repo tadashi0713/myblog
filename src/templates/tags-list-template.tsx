@@ -1,11 +1,11 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { Link, graphql } from "gatsby";
 import kebabCase from "lodash/kebabCase";
 import Layout from "../components/Layout";
 import Sidebar from "../components/Sidebar";
 import Page from "../components/Page";
 
-const TagsListTemplate = ({ data }) => {
+const TagsListTemplate = ({ data }): ReactElement => {
   const { title, subtitle } = data.site.siteMetadata;
   const { group } = data.allMarkdownRemark;
 
