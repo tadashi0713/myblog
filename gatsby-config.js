@@ -233,7 +233,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline",
-    "gatsby-plugin-preact",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-react-helmet",
     {
