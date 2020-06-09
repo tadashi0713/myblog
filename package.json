@@ -81,7 +81,7 @@
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.12.0",
     "react-google-recaptcha": "^2.1.0",
-    "react-helmet": "^6.0.0",
+    "react-helmet": "^6.1.0",
     "react-lazy-load": "^3.0.13",
     "react-share": "^4.0.1",
     "react-social-sharebuttons": "^3.0.0-rc4"
