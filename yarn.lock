@@ -9669,10 +9669,10 @@ gatsby-plugin-netlify@^2.3.5:
     lodash "^4.17.15"
     webpack-assets-manifest "^3.1.1"
 
-gatsby-plugin-offline@^3.2.9:
-  version "3.2.9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.2.9.tgz#23cb90ace60ea586f0b9c62e4f37806e5f00e2a3"
-  integrity sha512-AyW0DDdyqlSrseMlEcyPWxLAGGWFLNP2psP6WeuSifEQJrNIFV5FHU3prd925jXYW+aJ84qjLjKDDvNN/6c8xw==
+gatsby-plugin-offline@^3.2.10:
+  version "3.2.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.2.10.tgz#52d99698e8c8602594d3fa992c60b2532e011aa1"
+  integrity sha512-LFZ/pbLE/gX4bxzNRb3bLGTJV9BJCGZ+ObWm4cLim9VffDvNXqUFpPxBLLwsBMyyP6WoqxjS+vhCzFAROcRwJg==
   dependencies:
     "@babel/runtime" "^7.10.2"
     cheerio "^1.0.0-rc.3"
@@ -9997,10 +9997,10 @@ gatsby-telemetry@^1.3.9:
     stack-utils "1.0.2"
     uuid "3.4.0"
 
-gatsby-transformer-remark@^2.8.15:
-  version "2.8.15"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.8.15.tgz#fede4f0048dc3daadd1e35efab0563505bdbac75"
-  integrity sha512-rrczI9oRECjVeGEVg0pFPsfSKz6E9reh2MX9/z20p8yCxORHfBKgDlRVrtgHsMSs7dmpDZzccLB69dWMzrzuUw==
+gatsby-transformer-remark@^2.8.16:
+  version "2.8.16"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.8.16.tgz#0a9f85b82f9849c463f4dac73402ac67e291010d"
+  integrity sha512-41Bn6+Zwm0HPNTdsVoajtSxZlD/LumsVMtwbvCc1V7CwnKe3IWb3vtcy1sG/qImGx4IzrsJ74m3RxOkwAkjgew==
   dependencies:
     "@babel/runtime" "^7.10.2"
     bluebird "^3.7.2"
