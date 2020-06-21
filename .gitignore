@@ -9,3 +9,4 @@ gatsby-starter-lumen.iml
 *.iml
 .DS_Store
 .env.develop
+.lighthouseci

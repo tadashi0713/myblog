@@ -14,7 +14,8 @@
     "lint": "concurrently \"yarn run lint:ts\" \"yarn run lint:scss\"",
     "test": "jest --config ./tests/jest-config.js",
     "test:coverage": "jest --coverage --config ./tests/jest-config.js",
-    "test:watch": "jest --watch --config ./tests/jest-config.js"
+    "test:watch": "jest --watch --config ./tests/jest-config.js",
+    "lighthouse-ci": "lhci autorun"
   },
   "repository": "https://github.com/alxshelepenok/gatsby-starter-lumen",
   "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
@@ -92,6 +93,7 @@
     "@babel/plugin-proposal-optional-chaining": "7.10.3",
     "@babel/preset-env": "7.10.3",
     "@babel/preset-react": "7.10.1",
+    "@lhci/cli": "^0.4.1",
     "@types/classnames": "2.2.10",
     "@types/jest": "26.0.0",
     "@types/lodash": "4.14.155",
