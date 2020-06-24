@@ -88,9 +88,12 @@ workflows:
       - lint:
           requires:
             - install
-      - test:
+      - build:
           requires:
             - install
+      - lighthouse:
+          requires:
+            - build
       - coverage:
           requires:
             - install
