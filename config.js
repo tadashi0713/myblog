@@ -32,10 +32,6 @@ module.exports = {
       label: 'Slides',
       path: '/slides'
     },
-    {
-      label: 'Contact',
-      path: '/contact'
-    }
   ],
   author: {
     name: 'Tadashi Nemoto',

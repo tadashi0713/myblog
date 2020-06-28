@@ -27,18 +27,6 @@ const createPages = async ({ graphql, actions }) => {
     component: path.resolve('./src/templates/categories-list-template.tsx')
   });
 
-  // Contact
-  createPage({
-    path: '/contact',
-    component: path.resolve('./src/templates/contact-template.tsx')
-  });
-
-  // Contact thanks
-  createPage({
-    path: '/contact/thanks',
-    component: path.resolve('./src/templates/contact-thanks-template.tsx')
-  });
-
   // Posts and pages from markdown
   const result = await graphql(`
     {
