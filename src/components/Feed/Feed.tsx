@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import moment from "moment";
+import dayjs from "dayjs";
 import { Link } from "gatsby";
 import styles from "./Feed.module.scss";
 import SNSShare from "../SNSShare";
@@ -14,9 +14,9 @@ const Feed = ({ edges }): ReactElement => (
         <div className={styles["feed__item-meta"]}>
           <time
             className={styles["feed__item-meta-time"]}
-            dateTime={moment(edge.node.frontmatter.date).format("MMMM D, YYYY")}
+            dateTime={dayjs(edge.node.frontmatter.date).format("MMMM D, YYYY")}
           >
-            {moment(edge.node.frontmatter.date).format("MMMM YYYY")}
+            {dayjs(edge.node.frontmatter.date).format("MMMM YYYY")}
           </time>
           <span className={styles["feed__item-meta-divider"]} />
           <span className={styles["feed__item-meta-category"]}>
