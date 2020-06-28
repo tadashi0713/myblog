@@ -28,7 +28,7 @@ jobs:
             - dependencies-{{ checksum "yarn.lock" }}
       - run: yarn lint
 
-  build:
+  build_and_lighthouse:
     <<: *defaults
     steps:
       - checkout
@@ -36,23 +36,7 @@ jobs:
           keys:
             - dependencies-{{ checksum "yarn.lock" }}
       - run: yarn run build
-      - save_cache:
-          key: build-{{ .Environment.CIRCLE_SHA1 }}
-          paths:
-            - public
-
-  lighthouse:
-    <<: *defaults
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - dependencies-{{ checksum "yarn.lock" }}
-      - restore_cache:
-          keys:
-            - build-{{ .Environment.CIRCLE_SHA1 }}
-      - run: yarn global add @lhci/cli
-      - run: lhci autorun
+      - run: yarn run lighthouse-ci
 
   coverage:
     <<: *defaults
@@ -88,12 +72,9 @@ workflows:
       - lint:
           requires:
             - install
-      - build:
+      - build_and_lighthouse:
           requires:
             - install
-      - lighthouse:
-          requires:
-            - build
       - coverage:
           requires:
             - install
