@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://tadashi0713.com',
   title: 'Blog by Tadashi Nemoto',
-  subtitle: 'QA Automation Engineer / Software Engineer in Test',
+  subtitle: 'DevOps Engineer / Quality / Productivity / Automation',
   disqusShortname: 'https-tadashi0713-com',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-133659588-1',
@@ -36,7 +36,7 @@ module.exports = {
   author: {
     name: 'Tadashi Nemoto',
     photo: '/photo.jpg',
-    bio: 'QA Automation Engineer / Software Engineer in Test',
+    bio: 'DevOps Engineer / Quality / Productivity / Automation',
     contacts: {
       email: 'tadashi.nemoto0713@gmail.com',
       linkedin: 'tadashi-nemoto',
