@@ -85,11 +85,11 @@
     "react-social-sharebuttons": "^3.0.0-rc4"
   },
   "devDependencies": {
-    "@babel/core": "7.10.3",
-    "@babel/plugin-proposal-class-properties": "7.10.1",
-    "@babel/plugin-proposal-optional-chaining": "7.10.3",
-    "@babel/preset-env": "7.10.3",
-    "@babel/preset-react": "7.10.1",
+    "@babel/core": "7.10.4",
+    "@babel/plugin-proposal-class-properties": "7.10.4",
+    "@babel/plugin-proposal-optional-chaining": "7.10.4",
+    "@babel/preset-env": "7.10.4",
+    "@babel/preset-react": "7.10.4",
     "@types/classnames": "2.2.10",
     "@types/jest": "26.0.3",
     "@types/lodash": "4.14.157",
