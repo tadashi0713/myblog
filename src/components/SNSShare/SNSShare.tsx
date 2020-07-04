@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 
 type Props = {
-  title: string;
-  url: string;
+  postTitle: string;
+  postUrl: string;
 };
 
 interface WindowWithTwitter extends Window {
@@ -21,7 +21,7 @@ interface WindowWithTwitter extends Window {
 
 declare let window: WindowWithTwitter;
 
-const SharingButtons: React.FC<Props> = ({ title, url }: Props) => {
+const SharingButtons: React.FC<Props> = ({ postTitle, postUrl }: Props) => {
   useEffect(() => {
     // Gatsby は React コンポーネントを静的な HTML にビルドするのに Node をランタイムとして利用する。
     // このため window オブジェクトがないと怒られるので、ビルド時には window を利用する箇所をスルーさせる。
@@ -42,7 +42,7 @@ const SharingButtons: React.FC<Props> = ({ title, url }: Props) => {
       <li>
         <div
           className="fb-like"
-          data-href={url}
+          data-href={postUrl}
           data-width=""
           data-layout="button"
           data-action="like"
@@ -55,7 +55,7 @@ const SharingButtons: React.FC<Props> = ({ title, url }: Props) => {
         <a
           href="https://twitter.com/share?ref_src=twsrc%5Etfw"
           className="twitter-share-button"
-          data-text={title}
+          data-text={postTitle}
           data-show-count="false"
         >
           Tweet
