@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import styles from "./SNSShare.module.scss";
 
 type Props = {
   postTitle: string;
@@ -37,7 +38,7 @@ const SharingButtons: React.FC<Props> = ({ postTitle, postUrl }: Props) => {
   }, []);
 
   return (
-    <div className="sns-wrapper">
+    <div className={styles.snsshare}>
       {/* Facebook */}
       <li>
         <div
@@ -60,6 +61,16 @@ const SharingButtons: React.FC<Props> = ({ postTitle, postUrl }: Props) => {
         >
           Tweet
         </a>
+      </li>
+      {/* linkedin */}
+      <li>
+        <script
+          src="https://platform.linkedin.com/in.js"
+          type="text/javascript"
+        >
+          lang: ja_JP
+        </script>
+        <script type="IN/Share" data-url={postUrl}></script>
       </li>
       {/* hatebu */}
       <li>
