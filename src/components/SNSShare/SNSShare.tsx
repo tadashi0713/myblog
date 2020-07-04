@@ -42,13 +42,10 @@ const SharingButtons: React.FC<Props> = ({ postTitle, postUrl }: Props) => {
       {/* Facebook */}
       <li>
         <div
-          className="fb-like"
+          className="fb-share-button"
           data-href={postUrl}
-          data-width=""
-          data-layout="button"
-          data-action="like"
+          data-layout="button_count"
           data-size="small"
-          data-share="false"
         />
       </li>
       {/* Twitter */}
@@ -57,6 +54,7 @@ const SharingButtons: React.FC<Props> = ({ postTitle, postUrl }: Props) => {
           href="https://twitter.com/share?ref_src=twsrc%5Etfw"
           className="twitter-share-button"
           data-text={postTitle}
+          data-url={postUrl}
           data-show-count="false"
         >
           Tweet
@@ -77,8 +75,8 @@ const SharingButtons: React.FC<Props> = ({ postTitle, postUrl }: Props) => {
         <a
           href="https://b.hatena.ne.jp/entry/"
           className="hatena-bookmark-button"
-          data-hatena-bookmark-layout="basic-label"
-          data-hatena-bookmark-lang="en"
+          data-hatena-bookmark-layout="basic-label-counter"
+          data-hatena-bookmark-lang="ja"
           data-hatena-bookmark-height="20"
           title="このエントリーをはてなブックマークに追加"
         >
