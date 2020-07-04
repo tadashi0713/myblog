@@ -73,9 +73,11 @@ const SharingButtons: React.FC<Props> = ({ postTitle, postUrl }: Props) => {
       {/* hatebu */}
       <li>
         <a
-          href="https://b.hatena.ne.jp/entry/"
+          href={
+            "https://b.hatena.ne.jp/entry/s/" + postUrl.replace("https://", "")
+          }
           className="hatena-bookmark-button"
-          data-hatena-bookmark-layout="basic-label-counter"
+          data-hatena-bookmark-layout="basic-counter"
           data-hatena-bookmark-lang="ja"
           data-hatena-bookmark-height="20"
           title="このエントリーをはてなブックマークに追加"
