@@ -9,6 +9,7 @@ import SNSShare from "../SNSShare";
 import styles from "./Post.module.scss";
 import Iframely from "../Iframely";
 import siteConfig from "../../../config.js";
+import LazyLoad from "react-lazy-load";
 
 const Post = ({ post }): ReactElement => {
   const { tags, title, date } = post.frontmatter;
@@ -30,7 +31,9 @@ const Post = ({ post }): ReactElement => {
       </div>
 
       <div className={styles.post__footer}>
-        <SNSShare postUrl={postUrl} postTitle={title} />
+        <LazyLoad offsetTop={400}>
+          <SNSShare postUrl={postUrl} postTitle={title} />
+        </LazyLoad>
         <Meta date={date} />
         <Tags tags={tags} tagSlugs={tagSlugs} />
         <Author />

@@ -6,6 +6,7 @@ import SNSShare from "../SNSShare";
 import MiniTags from "./MiniTags";
 import Image from "../Image/index";
 import siteConfig from "../../../config.js";
+import LazyLoad from "react-lazy-load";
 
 const Feed = ({ edges }): ReactElement => (
   <div className={styles.feed}>
@@ -49,10 +50,12 @@ const Feed = ({ edges }): ReactElement => (
           tags={edge.node.frontmatter.tags}
           tagSlugs={edge.node.fields.tagSlugs}
         />
-        <SNSShare
-          postUrl={`${siteConfig.url}/${edge.node.fields.slug}`}
-          postTitle={edge.node.frontmatter.title}
-        />
+        <LazyLoad offsetTop={400}>
+          <SNSShare
+            postUrl={`${siteConfig.url}/${edge.node.fields.slug}`}
+            postTitle={edge.node.frontmatter.title}
+          />
+        </LazyLoad>
         <Link
           className={styles["feed__item-readmore"]}
           to={edge.node.fields.slug}
