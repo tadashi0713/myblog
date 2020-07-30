@@ -41,7 +41,7 @@
     "bluebird": "^3.7.2",
     "classnames": "^2.2.6",
     "codecov": "^3.7.2",
-    "dayjs": "^1.8.30",
+    "dayjs": "^1.8.31",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "gatsby": "^2.24.11",
     "gatsby-image": "^2.4.13",
