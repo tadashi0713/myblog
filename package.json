@@ -43,7 +43,7 @@
     "codecov": "^3.7.2",
     "dayjs": "^1.8.31",
     "eslint-plugin-jsx-a11y": "^6.3.1",
-    "gatsby": "^2.24.15",
+    "gatsby": "^2.24.23",
     "gatsby-image": "^2.4.14",
     "gatsby-link": "^2.4.13",
     "gatsby-plugin-catch-links": "^2.3.11",
