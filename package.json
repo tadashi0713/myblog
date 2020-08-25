@@ -94,7 +94,7 @@
     "@babel/preset-react": "7.10.4",
     "@types/classnames": "2.2.10",
     "@types/jest": "26.0.10",
-    "@types/lodash": "4.14.159",
+    "@types/lodash": "4.14.160",
     "@types/node": "12.12.35",
     "@types/react-google-recaptcha": "2.1.0",
     "@types/react-helmet": "6.1.0",
