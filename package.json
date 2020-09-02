@@ -74,7 +74,7 @@
     "gatsby-transformer-sharp": "^2.5.12",
     "invariant": "^2.2.4",
     "lodash": "^4.17.20",
-    "netlify-cms": "^2.10.55",
+    "netlify-cms": "^2.10.56",
     "node-sass": "^4.14.1",
     "normalize-scss": "^7.0.1",
     "preact": "^10.4.8",
